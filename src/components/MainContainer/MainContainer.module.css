@@ -1,0 +1,105 @@
+.backdrop {
+  padding: 50px;
+  display: flex;
+ 
+  justify-content: center;
+  
+  background-color: white;
+}
+.disabled{   
+  text-align: center;
+  width: 400px;
+ 
+  color: #fff;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  letter-spacing: 0.12em;
+}
+.main{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+height: 70vh;
+width: 100px;
+  
+ 
+  opacity: 0.4;
+  margin-right: 30px;
+  border-radius: 50px;
+  background: url('../../images/1.jpg');
+  background-size: cover;
+}
+.mainActive{
+  
+ 
+  margin-right: 30px;
+
+  height: 70vh;
+  background: url('../../images/1.jpg');
+  border-radius: 50px;
+  background-size: cover;
+  
+}
+
+.about{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  margin-right: 30px;
+  border-radius: 50px;
+  background-size: cover;
+  background: url('https://pixabay.com/get/gfa1b6fd1b1f790c515920213d3cf4c725875effe5dab540c95ea9f46dec3a10a6704a8dd587709886148744e5cde76e92f0e01a38788630b11c7c73c62e2a3b8_1920.jpg');
+}
+.about_active{
+  
+  margin-right: 30px;
+width: 65vw;
+  height: 70vh;
+  background: url('https://pixabay.com/get/gfa1b6fd1b1f790c515920213d3cf4c725875effe5dab540c95ea9f46dec3a10a6704a8dd587709886148744e5cde76e92f0e01a38788630b11c7c73c62e2a3b8_1920.jpg');
+  border-radius: 50px;
+  background-size: cover;
+  
+}
+
+.portfolio{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  margin-right: 30px;
+  border-radius: 50px;
+  background-size: cover;
+  background: url('https://pixabay.com/get/g9d68af166b82ca3fe63e5f7405d93c96f2ea06c779cff62405845cec8c1f7c97e2079aad40d47fc38aff7ce14ef2eadccde15e7701c23e5273b2e62147fe4848_1920.jpg');
+    
+}
+
+.portfolio_active{
+  margin-right: 30px;
+  width: 65vw;
+    height: 70vh;
+    background: url('https://pixabay.com/get/g9d68af166b82ca3fe63e5f7405d93c96f2ea06c779cff62405845cec8c1f7c97e2079aad40d47fc38aff7ce14ef2eadccde15e7701c23e5273b2e62147fe4848_1920.jpg');
+    border-radius: 50px;
+    background-size: cover;
+    
+}
+
+
+.skills{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  margin-right: 30px;
+  border-radius: 50px;
+  background-size: cover;
+  background: url('../../images/4.png');
+}
+.skills_active{
+  margin-right: 30px;
+  width: 65vw;
+    height: 70vh;
+    background: url('../../images/4.png');
+    border-radius: 50px;
+    background-size: cover;
+    
+}
+
+

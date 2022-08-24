@@ -1,0 +1,70 @@
+.main{
+    color: aliceblue;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0.02em;
+line-height: 14px;
+    width: 100%;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+   justify-content: flex-start;
+}
+.me_img{
+    border-radius: 50%;
+    box-shadow:
+inset rgba(0,0,0,.6) 0 -3px 8px,
+inset rgba(252,255,255,.7) 0 3px 8px,
+rgba(0,0,0,.8) 0 3px 8px -3px;
+    opacity: 1.5;
+    /* border: 1px solid rgb(219, 210, 210); */
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+.group{
+    transform: all 1s linear;
+
+    margin-top: 110px;
+flex-direction: row;
+
+}
+.title{
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.subtitle{
+    margin-top: 30px;
+color: rgb(184, 172, 158);
+
+}
+.text{
+    margin-top: 50px;
+    width: 600px;
+    line-height: 25px;
+letter-spacing: 0.02em;
+}
+.btn{
+    margin-top: 130px;
+    margin-left: -60px;
+    border: 3px solid rgb(106, 73, 73);
+    width: 400px;
+  height: 35px;
+  border-radius: 15px;
+ opacity: 0.7;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+    
+    
+  
+/* $inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2), 
+inset -.2rem -.2rem .5rem var(--white); */
+}
