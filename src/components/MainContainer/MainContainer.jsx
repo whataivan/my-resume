@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import style from '../MainContainer/MainContainer.module.css';
-import { About } from 'components/About/About';
+// import { About } from 'components/About/About';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { Main } from 'components/Main/Main';
