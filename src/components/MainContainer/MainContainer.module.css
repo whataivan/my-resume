@@ -23,7 +23,7 @@ height: 70vh;
 width: 100px;
   
  
-  opacity: 0.4;
+ 
   margin-right: 30px;
   border-radius: 50px;
   background: url('../../images/1.jpg');
@@ -31,7 +31,7 @@ width: 100px;
 }
 .mainActive{
   
- 
+  /* opacity: 0.7; */
   margin-right: 30px;
 
   height: 70vh;
@@ -51,7 +51,7 @@ width: 100px;
   background: url('../../images/2.jpg');
 }
 .about_active{
-  
+  opacity: 0.7;
   margin-right: 30px;
 width: 65vw;
   height: 70vh;
@@ -73,7 +73,7 @@ width: 65vw;
 }
 
 .portfolio_active{
-  opacity: 0.5;
+  opacity: 0.7;
   margin-right: 30px;
   width: 65vw;
     height: 70vh;
@@ -94,6 +94,7 @@ width: 65vw;
   background: url('../../images/4.png');
 }
 .skills_active{
+  opacity: 0.7;
   margin-right: 30px;
   width: 65vw;
     height: 70vh;
