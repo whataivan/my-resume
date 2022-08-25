@@ -1,5 +1,6 @@
 import style from '../Main/Main.module.css';
 import me from '../../images/me.png';
+import resume from '../../files/Ivan_Pikun_junior_react.pdf'
 export const Main = () => {
   return (
     <div className={style.main}>
@@ -15,7 +16,7 @@ export const Main = () => {
           Reliable, organized, and ready to take responsibility and evolve in my
           specialization.
         </p>
-        <button className={style.btn} type='button'>DOWNLOAD CV</button>
+        <button className={style.btn} type='button'><a className={style.link} href={resume} download>DOWNLOAD CV</a></button>
       </div>
     </div>
   );

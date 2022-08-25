@@ -48,14 +48,14 @@ width: 100px;
   margin-right: 30px;
   border-radius: 50px;
   background-size: cover;
-  background: url('https://pixabay.com/get/gfa1b6fd1b1f790c515920213d3cf4c725875effe5dab540c95ea9f46dec3a10a6704a8dd587709886148744e5cde76e92f0e01a38788630b11c7c73c62e2a3b8_1920.jpg');
+  background: url('../../images/2.jpg');
 }
 .about_active{
   
   margin-right: 30px;
 width: 65vw;
   height: 70vh;
-  background: url('https://pixabay.com/get/gfa1b6fd1b1f790c515920213d3cf4c725875effe5dab540c95ea9f46dec3a10a6704a8dd587709886148744e5cde76e92f0e01a38788630b11c7c73c62e2a3b8_1920.jpg');
+  background: url('../../images/2.jpg');
   border-radius: 50px;
   background-size: cover;
   
@@ -68,15 +68,16 @@ width: 65vw;
   margin-right: 30px;
   border-radius: 50px;
   background-size: cover;
-  background: url('https://pixabay.com/get/g9d68af166b82ca3fe63e5f7405d93c96f2ea06c779cff62405845cec8c1f7c97e2079aad40d47fc38aff7ce14ef2eadccde15e7701c23e5273b2e62147fe4848_1920.jpg');
+  background: url('../../images/3.jpg');
     
 }
 
 .portfolio_active{
+  opacity: 0.5;
   margin-right: 30px;
   width: 65vw;
     height: 70vh;
-    background: url('https://pixabay.com/get/g9d68af166b82ca3fe63e5f7405d93c96f2ea06c779cff62405845cec8c1f7c97e2079aad40d47fc38aff7ce14ef2eadccde15e7701c23e5273b2e62147fe4848_1920.jpg');
+    background: url('../../images/3.jpg');
     border-radius: 50px;
     background-size: cover;
     

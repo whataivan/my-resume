@@ -29,7 +29,7 @@ export const MainContainer = () => {
         className={isActive===2? style.about_active:style.about }
         onClick={() => setIsActive(2)}
       >
-        {isActive!==2&&<h2 className={style.disabled}>ABOUT_ME</h2>} 
+        {isActive===2?<Main/>:<h2 className={style.disabled}>ABOUT_ME</h2>} 
       </motion.div>
 
       <motion.div
@@ -51,7 +51,7 @@ export const MainContainer = () => {
         className={isActive===4? style.skills_active:style.skills }
         onClick={() => setIsActive(4)}
       >
-        
+        {isActive===4?<Main/>:<h2 className={style.disabled}>SKILLS</h2>} 
       </motion.div>
     </div>
   );

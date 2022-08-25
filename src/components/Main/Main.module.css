@@ -50,7 +50,7 @@ letter-spacing: 0.02em;
 }
 .btn{
     margin-top: 130px;
-    margin-left: -60px;
+    margin-left: -85px;
     border: 3px solid rgb(106, 73, 73);
     width: 400px;
   height: 35px;
@@ -68,3 +68,21 @@ letter-spacing: 0.02em;
 /* $inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2), 
 inset -.2rem -.2rem .5rem var(--white); */
 }
+
+.btn:hover{
+    transform: translateY(-1px);
+    background-color: bisque;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(141, 131, 131);
+           
+            
+}
+
+.link{
+    color: black;
+    opacity: 1;
+    /* visibility: hidden; */
+    text-decoration: none;
+    width: 100%;
+    
+  }
+  
