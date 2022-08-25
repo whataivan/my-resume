@@ -1,13 +1,13 @@
+
+import rootReducer from '../redux/actice-slice'
+
 const { configureStore } = require("@reduxjs/toolkit");
 
 
 
-
-
-
-// const store = configureStore({
-//     reducer: {
-//        contacts: rootReducer,
+export const store = configureStore({
+    reducer: {
+       active: rootReducer,
        
-//     }
-//     })
+    }
+    })

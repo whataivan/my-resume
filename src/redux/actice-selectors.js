@@ -1,0 +1,1 @@
+export const getActive = state=> state.active.active

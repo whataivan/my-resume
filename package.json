@@ -1,5 +1,5 @@
 {
-  "name": "react-homework-template",
+  "name": "my-resume",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://Jasper935.github.io/my-resume/",
@@ -16,6 +16,7 @@
     "react-expand-animated": "^1.0.2",
     "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.5",

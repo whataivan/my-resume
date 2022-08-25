@@ -5,14 +5,14 @@ const initialState = {
     active: 1
 }
 
-const authSlice = createSlice({
+const activeSlice = createSlice({
     name: 'active',
     initialState,
-    extraReducers: {
+    reducers: {
        setActive:(state, { payload })=>{
         state.active = payload
        }
     }
 })
-
-export default authSlice.reducer
+export const {setActive} =activeSlice.actions
+export default activeSlice.reducer
