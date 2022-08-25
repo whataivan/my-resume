@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.7c017162.css",
-    "main.js": "/my-resume/static/js/main.ad17fff9.js",
+    "main.css": "/my-resume/static/css/main.488ee870.css",
+    "main.js": "/my-resume/static/js/main.d8da17aa.js",
     "static/media/4.png": "/my-resume/static/media/4.983008ec615f4f84d598.png",
     "static/media/me.png": "/my-resume/static/media/me.67ede7d166fdac31a446.png",
-    "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.2a3a23c4ae9e454602f0.pdf",
+    "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.3feae5dabb7b4df48d85.pdf",
     "static/media/3.jpg": "/my-resume/static/media/3.548b17b579ffbef6ce5b.jpg",
     "static/media/1.jpg": "/my-resume/static/media/1.40b517ef5030125925d4.jpg",
     "static/media/2.jpg": "/my-resume/static/media/2.46e0c4e70cab839e2617.jpg",
     "index.html": "/my-resume/index.html",
-    "main.7c017162.css.map": "/my-resume/static/css/main.7c017162.css.map",
-    "main.ad17fff9.js.map": "/my-resume/static/js/main.ad17fff9.js.map"
+    "main.488ee870.css.map": "/my-resume/static/css/main.488ee870.css.map",
+    "main.d8da17aa.js.map": "/my-resume/static/js/main.d8da17aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c017162.css",
-    "static/js/main.ad17fff9.js"
+    "static/css/main.488ee870.css",
+    "static/js/main.d8da17aa.js"
   ]
 }
