@@ -114,7 +114,23 @@ export const App = () => {
         className={isActive === 4 ? style.skills_active : style.skills}
         onClick={() => dispatch(setActive(4))}
       >
-        {isActive === 4 ? <Main /> : <h2 className={style.disabled}>SKILLS</h2>}
+         <CSSTransition
+          in={isActive === 4}
+          timeout={300}
+          classNames="item"
+          unmountOnExit
+        >
+          <Portfolio/>
+        </CSSTransition>
+        <CSSTransition
+          in={isActive !== 4}
+          timeout={100}
+          classNames="title"
+          unmountOnExit
+        >
+<h2 className={style.disabled}>SKILLS</h2>
+</CSSTransition>
+       
       </motion.div>
       </MainContainer>
       

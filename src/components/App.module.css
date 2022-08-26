@@ -67,7 +67,7 @@
   }
   
   .portfolio_active{
-    opacity: 0.7;
+    /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
       height: 70vh;
