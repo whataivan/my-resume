@@ -1,5 +1,5 @@
 import { MainContainer } from "./MainContainer/MainContainer";
-import { About } from "./About/About";
+// import { About } from "./About/About";
 import { useDispatch, useSelector } from "react-redux";
 import style from  './App.module.css'
 import {
