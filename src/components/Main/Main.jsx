@@ -1,15 +1,15 @@
 import style from '../Main/Main.module.css';
 import me from '../../images/me.png';
 import resume from '../../files/Ivan_Pikun_junior_react.pdf'
-import { useSelector } from 'react-redux/es/exports';
-import { getActive } from 'redux/actice-selectors';
+// import { useSelector } from 'react-redux/es/exports';
+// import { getActive } from 'redux/actice-selectors';
 
 
 
 export const Main = () => {
   
-  const isActive = useSelector(getActive)
-  console.log(isActive);
+  // const isActive = useSelector(getActive)
+  // console.log(isActive);
   return (
     // <SwitchTransition>
     // <CSSTransition

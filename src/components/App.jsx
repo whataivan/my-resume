@@ -5,7 +5,7 @@ import style from  './App.module.css'
 import {
   // TransitionGroup,
   CSSTransition,
-  // SwitchTransition,
+  // Transition ,
 } from 'react-transition-group';
 // import { About } from 'components/About/About';
 import { setActive } from "redux/actice-slice"; 

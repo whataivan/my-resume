@@ -1,14 +1,16 @@
 
 .container{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /* position: relative; */
 }
 
 
 .list{
-    margin-top: 0;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,34 +29,31 @@
     flex-direction: column;
 }
 .group{
-    border: 2px solid rgb(247, 237, 237) ;
-    /* background:url("../../images/back.jpg"); */
-    /* background: url('https://cdn.pixabay.com/photo/2017/07/29/13/24/background-2551501_960_720.jpg'); */
-    
-    background: url('https://media.istockphoto.com/photos/water-drop-on-gray-surface-picture-id533993538?k=20&m=533993538&s=612x612&w=0&h=oIbVDh3Kg_gqkUlusaUp11qZkg662UIoFoqoorbw870=');
+    background: url('../../images/3.jpg');
     display: flex;
     
     flex-direction: column;
-    /* justify-content: center; */
+    
     width: 180px;
-    height: 250px;
+    height: 270px;
     margin-right: 25px;
-    /* border: 3px solid black ; */
+    
     border-radius: 20px;
-    background-color: aliceblue;
-    background-size: cover;
+    
+    background-size: auto;
 }
 
 
 .img{
-    opacity: 0.9;
-    border-bottom: 2px solid rgb(254, 251, 251) ;
+    /* opacity: 0.9; */
+    border-bottom: 3px solid black ;
     border-radius: 20px 20px 0 0;
     width: 180px;
     height: 120px;
+    margin-bottom: 5px;
 }
 .subtitle{
-    margin-bottom: 5px;
+    margin-bottom: 9px;
     color: aliceblue;
     /* margin-right: auto; */
     margin-left: 46px;
@@ -64,13 +63,18 @@
     color: white;
     font-size: 12px;
 }
+.used_text{
+    font-size: 12px;
+    margin:5px 8px 0 8px;
+    color: blanchedalmond;
+}
 
 .img_wrap{
-    
+    position: relative;
     margin-top: 30px;
-    /* border: 2px solid rgb(42, 32, 32) ; */
-    width: 540px;
-    /* height: 246px; */
+    
+    width: 640px;
+    
     margin-right: auto;
     margin-left: auto;
     border-radius: 15px;
@@ -81,7 +85,10 @@
 
 
 .primary_img{
+    /* position: absolute;
+    bottom: 267px; */
+  /* left: 805px; */
     box-shadow: inset 2px 2px 5px rgba(251, 251, 248, 0.5), 1px 1px 5px rgb(249, 244, 244);
-    width: 100%;
+    width: 640px;
     border-radius: 15px;
 }

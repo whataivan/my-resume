@@ -10,10 +10,11 @@
     transition: all 300ms ease;
   }
   .main{
+    position: relative;
     display: flex;
    align-items: center;
    justify-content: center;
-  height: 70vh;
+  height: 75vh;
   width: 100px;
     
    
@@ -22,13 +23,14 @@
     border-radius: 50px;
     background: url('../images/1.jpg');
     background-size: cover;
+
   }
   .mainActive{
     
     /* opacity: 0.7; */
     margin-right: 30px;
   
-    height: 70vh;
+    height: 75vh;
     background: url('../images/1.jpg');
     border-radius: 50px;
     background-size: cover;
@@ -48,7 +50,7 @@
     opacity: 0.7;
     margin-right: 30px;
   width: 65vw;
-    height: 70vh;
+    height: 75vh;
     background: url('../images/2.jpg');
     border-radius: 50px;
     background-size: cover;
@@ -70,7 +72,7 @@
     /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
-      height: 70vh;
+      height: 75vh;
       background: url('../images/3.jpg');
       border-radius: 50px;
       background-size: cover;
@@ -91,7 +93,7 @@
     /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
-      height: 70vh;
+      height: 75vh;
       background: url('../images/4.png');
       border-radius: 50px;
       background-size: cover;
