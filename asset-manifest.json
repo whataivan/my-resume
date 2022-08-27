@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.9b87d192.css",
-    "main.js": "/my-resume/static/js/main.fd7b8260.js",
+    "main.css": "/my-resume/static/css/main.69b98260.css",
+    "main.js": "/my-resume/static/js/main.92664acf.js",
+    "static/media/filmoteka.png": "/my-resume/static/media/filmoteka.e508c16a6da770ea9628.png",
     "static/media/4.png": "/my-resume/static/media/4.983008ec615f4f84d598.png",
     "static/media/me.png": "/my-resume/static/media/me.67ede7d166fdac31a446.png",
     "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.3feae5dabb7b4df48d85.pdf",
     "static/media/3.jpg": "/my-resume/static/media/3.548b17b579ffbef6ce5b.jpg",
     "static/media/finder.jpg": "/my-resume/static/media/finder.4317c2d8cfe60b127a2a.jpg",
     "static/media/1.jpg": "/my-resume/static/media/1.40b517ef5030125925d4.jpg",
-    "static/media/filmoteka.jpg": "/my-resume/static/media/filmoteka.859f8d4098b9d3f0d998.jpg",
     "static/media/2.jpg": "/my-resume/static/media/2.46e0c4e70cab839e2617.jpg",
     "static/media/helleng.jpg": "/my-resume/static/media/helleng.c91e3f9beafd770b056b.jpg",
     "static/media/kapusta.jpg": "/my-resume/static/media/kapusta.33079b1966512d2aef0c.jpg",
     "index.html": "/my-resume/index.html",
-    "main.9b87d192.css.map": "/my-resume/static/css/main.9b87d192.css.map",
-    "main.fd7b8260.js.map": "/my-resume/static/js/main.fd7b8260.js.map"
+    "main.69b98260.css.map": "/my-resume/static/css/main.69b98260.css.map",
+    "main.92664acf.js.map": "/my-resume/static/js/main.92664acf.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b87d192.css",
-    "static/js/main.fd7b8260.js"
+    "static/css/main.69b98260.css",
+    "static/js/main.92664acf.js"
   ]
 }
