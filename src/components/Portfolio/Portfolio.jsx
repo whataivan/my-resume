@@ -3,118 +3,164 @@ import kapusta from '../../images/kapusta.jpg';
 import filmoteka from '../../images/filmoteka.png';
 import finder from '../../images/finder.jpg';
 import helleng from '../../images/helleng.jpg';
-import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition } from 'react-transition-group';
 import { useState } from 'react';
-import { getActive } from 'redux/actice-selectors';
-import { useSelector } from 'react-redux';
+// import { getActive } from 'redux/actice-selectors';
+// import { useSelector } from 'react-redux';
+import {
+  motion,
+  AnimatePresence,
+ 
+} from 'framer-motion';
 export const Portfolio = () => {
   const [isActive, setIsActive] = useState(filmoteka);
-  const active = useSelector(getActive);
-  console.log(active);
+  // const active = useSelector(getActive);
+const srcSwitcher=()=>{
+  let result
+   switch (isActive) {
+    case kapusta:
+      result=['https://github.com/Mr-Nihility/kapusta-project.git','https://kapusta-project-app.netlify.app/']
+  break;
+  case filmoteka:
+      result=['https://github.com/Jasper935/filmoteka-project.git','http://jasper935.github.io/filmoteka-project/']
+  break;
+  case finder:
+      result=['https://github.com/Jasper935/goit-react-hw-04-images.git','https://jasper935.github.io/goit-react-hw-04-images/']
+  break;
+  case helleng:
+      result=['https://github.com/RedokLeeroy/placeholders_project.git','https://redokleeroy.github.io/placeholders_project/']
+  break;
+    default:
+      break;
+   }
+   return result
+}
+  // const images = [kapusta, filmoteka, finder, helleng];
   return (
     <div className={style.container}>
-      {/* <h2>My portfolio</h2> */}
-      
-      <CSSTransition
-              
-              timeout={6000}
-              classNames="list_item"
-              in={active===3}
-            >
-      <ul className={style.list}>
-      
-        <li className={style.list_item}>
+     
+      <motion.ul
+        className={style.list}
+        initial={{ opacity: 0, scale: 0.3 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        <motion.li
+          transition={{ duration: 0.3 }}
+          whileTap={{ y: 10 }}
+          className={style.list_item}
+        >
           <h3 className={style.subtitle}>Kapu$ta</h3>
           <div onClick={() => setIsActive(kapusta)} className={style.group}>
             <img className={style.img} src={kapusta} alt="kapusta" />
-            <p className={style.used_text}>[React, Redux toolkit, Formik, Axios]</p>
-            <p className={style.text}>Position: Team-leader.</p>
-            <p className={style.text}>Work with api, create async thunk and custom select.</p>
+            <p className={style.used_text}>
+              {' '}
+              [React, Redux toolkit, Formik, Axios]
+            </p>
+            <p className={style.text}>Position: Developer.</p>
+            <p className={style.text}>
+              Work with api, create async thunk and custom select.
+            </p>
             <p className={style.text}>Team work, work with git branches.</p>
           </div>
-          
-        </li>
-        
-        <li className={style.list_item}>
+        </motion.li>
+
+        <motion.li
+          transition={{ duration: 0.5 }}
+          whileTap={{ y: 10 }}
+          className={style.list_item}
+        >
           <h3 className={style.subtitle}>Filmoteka</h3>
           <div onClick={() => setIsActive(filmoteka)} className={style.group}>
             <img className={style.img} src={filmoteka} alt="filmoteka" />
-            <p className={style.text}>[HTML, CSS, JS, SASS, Axios]</p>
-            <p className={style.text}>Position: Developer.</p>
-            <p className={style.text}>Developed reviews section, header and work with local storage.</p>
+            <p className={style.used_text}>[HTML, CSS, JS, SASS, Axios]</p>
+            <p className={style.text}>Position: Team-leader.</p>
+            <p className={style.text}>
+              Developed reviews section, header and work with local storage.
+            </p>
             <p className={style.text}>Code review, work with git branches.</p>
           </div>
-        </li>
-        <li className={style.list_item}>
+        </motion.li>
+        <motion.li
+          transition={{ duration: 0.5 }}
+          whileTap={{ y: 10 }}
+          className={style.list_item}
+        >
           <h3 className={style.subtitle}>Im finder</h3>
           <div onClick={() => setIsActive(finder)} className={style.group}>
             <img className={style.img} src={finder} alt="finder" />
-            <p className={style.text}></p>
+            <p className={style.used_text}>[HTML, CSS, React, Axios]</p>
+            <p className={style.text}>Position: Developer.</p>
+            <p className={style.text}>Simple web-app with open API for searching images.</p>
           </div>
-        </li>
-        <li className={style.list_item}>
+        </motion.li>
+        <motion.li
+          transition={{ duration: 0.5 }}
+          whileTap={{ y: 10 }}
+          className={style.list_item}
+        >
           <h3 className={style.subtitle}>Hellenglish</h3>
           <div onClick={() => setIsActive(helleng)} className={style.group}>
             <img className={style.img} src={helleng} alt="helleng" />
-            <p className={style.text}></p>
+            <p className={style.used_text}>[HTML, CSS, SASS, BEM]</p>
+            <p className={style.text}>Position: Developer.</p>
+            <p className={style.text}>Developed guarantee and feedback section.</p>
           </div>
-        </li>
-        
-      </ul>
-      </CSSTransition>
-      
-      
-      <div className={style.img_wrap}>
-      <CSSTransition
-              
-              timeout={1000}
-              classNames="list_item"
-              in={isActive===kapusta}
-              unmountOnExit
-            >
-        <img className={style.primary_img} src={kapusta} alt="" />
-        </CSSTransition>
-      </div>
-      
-      
-      <div className={style.img_wrap}>
-      <CSSTransition
-              
-              timeout={1000}
-              classNames="list_item"
-              in={isActive===filmoteka}
-              unmountOnExit
-            >
-        <img className={style.primary_img} src={filmoteka} alt="" />
-        </CSSTransition>
-      </div>
-      
-      
-      <div className={style.img_wrap}>
-      <CSSTransition
-              
-              timeout={1000}
-              classNames="list_item"
-              in={isActive===helleng}
-              unmountOnExit
-            >
-        <img className={style.primary_img} src={helleng} alt="" />
-        </CSSTransition>
-      </div>
-      
-      
-      <div className={style.img_wrap}>
-      <CSSTransition
-              
-              timeout={1000}
-              classNames="list_item"
-              in={isActive===finder}
-              unmountOnExit
-            >
-        <img className={style.primary_img} src={finder} alt="" />
-        </CSSTransition>
-      </div>
-      
+        </motion.li>
+      </motion.ul>
+      {/* </CSSTransition> */}
+
+      {/* ------------------------------------------------------------------------------ */}
+
+      <motion.div
+        className={style.bot_wrap}
+        initial={{ opacity: 0, scale: 0.3 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        <AnimatePresence mode="wait" initial={false} exitBeforeEnter>
+          <motion.div
+            key={isActive}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            // exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: 'spring', duration: 0.4 }}
+          >
+            <motion.img
+            transition={{ type: 'spring', duration: 0.7 }}
+              src={isActive}
+              whileHover={{ scale: 1.01 }}
+              className={style.primary_img}
+              alt={isActive}
+            />
+          </motion.div>
+        </AnimatePresence>
+
+        <div className={style.btn_wrap}>
+          <motion.a
+          target='_blank'
+          style={{textDecoration:'none'}}
+          href={srcSwitcher()[0]}
+            whileHover={{ scale: 1.02, opacity:1 }}
+            type="button"
+            className={style.first_btn}
+          >
+            GO TO CODE
+          </motion.a>
+          <motion.a 
+          target='_blank'
+          style={{textDecoration:'none'}}
+          href={srcSwitcher()[1]}
+            whileHover={{ scale: 1.02, opacity:1 }}
+            type="button"
+            className={style.second_btn}
+          >
+            VISIT SITE
+          </motion.a>
+        </div>
+      </motion.div>
     </div>
   );
 };
