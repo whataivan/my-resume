@@ -54,8 +54,22 @@ align-items: center;
 
   margin-left: 46px;
 }
+.textList{
+ 
+}
+.item{
+  position: relative;
+}
+.item:before {
+  position: absolute;
+  color: white; /* Цвет маркера */
+  content: "•"; /* Маркер */
+  padding-right: 7px; /* Отступ от маркера до текста */
+  top: 0;
+  left: -15px;
+ }
 .text {
-  margin: 5px 20px 0 20px;
+  margin: 5px 20px 0 0px;
   color: white;
   font-size: 12px;
 }

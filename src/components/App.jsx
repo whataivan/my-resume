@@ -31,22 +31,16 @@ export const App = () => {
         className={isActive === 1 ? style.mainActive : style.main}
         onClick={() => dispatch(setActive(1))}
       >
-        <CSSTransition
-          in={isActive === 1}
-          timeout={300}
-          classNames="item"
-          unmountOnExit
-        >
-          <Main />
-        </CSSTransition>
-        <CSSTransition
-          in={isActive !== 1}
-          timeout={100}
-          classNames="title"
-          unmountOnExit
-        >
-          <h2 className={style.disabled}>WELCOME!</h2>
-        </CSSTransition>
+        
+          { isActive === 1 ? <motion.div initial={{ opacity: 0, scale: 0.3 }}
+        key={isActive}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}><Main /> </motion.div>: <h2 className={style.disabled}>WELCOME!</h2> }
+          
+          
+          
+       
       </motion.div>
 {/* //---------------------------------------------------------22222222222222222 */}
       <motion.div
@@ -57,22 +51,19 @@ export const App = () => {
         className={isActive === 2 ? style.about_active : style.about}
         onClick={() => dispatch(setActive(2))}
       >
-        <CSSTransition
-          in={isActive === 2}
-          timeout={300}
-          classNames="item"
-          unmountOnExit
-        >
-          <Main />
-        </CSSTransition>
-        <CSSTransition
-          in={isActive !== 2}
-          timeout={100}
-          classNames="title"
-          unmountOnExit
-        >
-          <h2 className={style.disabled}>ABOUT_ME</h2>
-        </CSSTransition>
+        
+        
+          { isActive === 2 ? <motion.div initial={{ opacity: 0, scale: 0.3 }}
+        key={isActive}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}><Main /></motion.div> : <h2 className={style.disabled}>ABOUT_ME</h2> }
+          
+          
+        
+        
+          
+        
       </motion.div>
 {/* ---------------333333333333333333----------------------------------------------------------------------------------------------------------------- */}
       <motion.div
