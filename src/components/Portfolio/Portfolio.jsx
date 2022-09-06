@@ -7,7 +7,7 @@ import helleng from '../../images/helleng.jpg';
 import { useState } from 'react';
 // import { getActive } from 'redux/actice-selectors';
 // import { useSelector } from 'react-redux';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 export const Portfolio = () => {
   const [isActive, setIsActive] = useState(filmoteka);
   // const active = useSelector(getActive);

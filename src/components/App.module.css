@@ -90,6 +90,7 @@
     background: url('../images/4.png');
   }
   .skills_active{
+    
     /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
@@ -97,7 +98,7 @@
       background: url('../images/4.png');
       border-radius: 50px;
       background-size: cover;
-      
+     
   }
   
   

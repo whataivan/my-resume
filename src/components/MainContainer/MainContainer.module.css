@@ -1,7 +1,7 @@
 .backdrop {
   padding: 100px 50px;
   display: flex;
- 
+ /* align-items: center; */
   justify-content: center;
   
   background-color: white;
