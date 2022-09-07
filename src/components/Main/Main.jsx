@@ -30,15 +30,15 @@ export const Main = () => {
           Reliable, organized, and ready to take responsibility and evolve in my
           specialization.
         </p>
-        <button className={style.btn} type="button">
+        <motion.button transition={{duration: 0.1}} whileHover={{backgroundColor:'rgb(106, 94, 72)'}} className={style.btn} type="button">
           <a className={style.link} href={resume} download>
             DOWNLOAD CV
           </a>
-        </button>
+        </motion.button  >
         <ul className={style.socials_list}>
           {socials.map((e, i)=>{
             return (<li key={i} className={style.socials_item}> 
-              <motion.a whileHover={{scale: 1.2}}
+              <motion.a target="_blank" whileHover={{scale: 1.3}}
                href="https://www.linkedin.com/in/ivan-pikun-94367423b/">
                 <svg width='40' height='40' className={style.icon} >
                   <use href={e}/>

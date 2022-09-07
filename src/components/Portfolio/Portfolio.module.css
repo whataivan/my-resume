@@ -54,7 +54,9 @@ align-items: center;
 
   margin-left: 46px;
 }
-
+.textList{
+ 
+}
 .item{
   position: relative;
 }
@@ -80,7 +82,7 @@ align-items: center;
 .primary_img {
     
   width:585px;
-  height: 265px;
+  height: 250px;
   margin-right: 25px;
   margin-right: auto;
   margin-left: auto;

@@ -1,10 +1,12 @@
 import style from './Skills.module.css';
 import { motion } from 'framer-motion';
+import { Reorder } from "framer-motion"
+import { useState } from 'react';
 export const Skills = () => {
-  const techSkills = [
+  const [techSkills, setTechSkills] = useState([
     'HTML, CSS',
     'SASS',
-    'JavaScript.',
+    'JavaScript',
     'React',
     'ReduxToolKit',
     'Material Ui',
@@ -15,7 +17,7 @@ export const Skills = () => {
     'Transition Group',
     'Framer motion',
     'Formik',
-  ];
+  ])
   const softSkills = [
     'Hardworking',
     'Communicative',
@@ -43,18 +45,21 @@ export const Skills = () => {
       <div className={style.list_wrap}>
         <h3 className={style.title}>Tech Skills</h3>
         <ul className={style.list}>
+        <Reorder.Group axis='y' as='ul' values={techSkills} onReorder={setTechSkills}>
           {techSkills.map((el, i) => {
             return (
-              <motion.li whileHover={{ x: '5px' }} className={style.item}>
+              
+              <Reorder.Item value={el} key={el}  className={style.item}>
                 {' '}
                 <p className={style.text}>{el}</p>
-              </motion.li>
+              </Reorder.Item>
             );
           })}
+          </Reorder.Group>
         </ul>
       </div>
       <div className={style.list_wrap}>
-        <h3 className={style.title}>Tech Skills</h3>
+        <h3 className={style.title}>Soft Skills</h3>
         <ul className={style.list}>
           {softSkills.map((el, i) => {
             return (
