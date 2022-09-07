@@ -18,7 +18,7 @@ export const Skills = () => {
     'Framer motion',
     'Formik',
   ])
-  const softSkills = [
+  const [softSkills, setSoftSkills] = useState([
     'Hardworking',
     'Communicative',
     'Confident',
@@ -32,7 +32,7 @@ export const Skills = () => {
     'Persuasive',
     'Punctual',
     'Quiet'
-  ];
+  ])
 
   return (
     <motion.div
@@ -44,8 +44,8 @@ export const Skills = () => {
     >
       <div className={style.list_wrap}>
         <h3 className={style.title}>Tech Skills</h3>
-        <ul className={style.list}>
-        <Reorder.Group axis='y' as='ul' values={techSkills} onReorder={setTechSkills}>
+       
+        <Reorder.Group axis='y' as='ul' className={style.list} values={techSkills} onReorder={setTechSkills}>
           {techSkills.map((el, i) => {
             return (
               
@@ -56,20 +56,20 @@ export const Skills = () => {
             );
           })}
           </Reorder.Group>
-        </ul>
+       
       </div>
       <div className={style.list_wrap}>
         <h3 className={style.title}>Soft Skills</h3>
-        <ul className={style.list}>
+        <Reorder.Group className={style.list} axis='y' as='ul' values={softSkills}  onReorder={setSoftSkills}>
           {softSkills.map((el, i) => {
             return (
-              <motion.li whileHover={{ scale: 1.03 }} className={style.item}>
+              <Reorder.Item value={el} key={el}  className={style.item}>
                 {' '}
                 <p className={style.text}>{el}</p>
-              </motion.li>
+              </Reorder.Item>
             );
           })}
-        </ul>
+        </Reorder.Group>
       </div>
     </motion.div>
   );
