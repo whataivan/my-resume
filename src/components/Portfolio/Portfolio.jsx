@@ -7,7 +7,7 @@ import helleng from '../../images/helleng.jpg';
 import { useState } from 'react';
 // import { getActive } from 'redux/actice-selectors';
 // import { useSelector } from 'react-redux';
-import { motion } from 'framer-motion';
+import { motion, LazyMotion, domAnimation, m } from 'framer-motion';
 export const Portfolio = () => {
   const [isActive, setIsActive] = useState(filmoteka);
   // const active = useSelector(getActive);
@@ -60,7 +60,7 @@ export const Portfolio = () => {
         >
           <h3 className={style.subtitle}>Kapu$ta</h3>
           <div onClick={() => setIsActive(kapusta)} className={style.group}>
-            <img className={style.img} src={kapusta} alt="kapusta" />
+            <motion.img className={style.img} src={kapusta} alt="kapusta" />
             <p className={style.used_text}>
               [React, Redux toolkit, Formik, Axios]
             </p>
@@ -89,7 +89,7 @@ export const Portfolio = () => {
         >
           <h3 className={style.subtitle}>Filmoteka</h3>
           <div onClick={() => setIsActive(filmoteka)} className={style.group}>
-            <img className={style.img} src={filmoteka} alt="filmoteka" />
+            <motion.img className={style.img} src={filmoteka} alt="filmoteka" />
             <p className={style.used_text}>[HTML, CSS, JS, SASS, Axios]</p>
             <p className={style.text}>Position: Team-leader.</p>
             <ul className={style.textList}>
@@ -115,7 +115,9 @@ export const Portfolio = () => {
         >
           <h3 className={style.subtitle}>Im finder</h3>
           <div onClick={() => setIsActive(finder)} className={style.group}>
-            <img className={style.img} src={finder} alt="finder" />
+          <LazyMotion features={domAnimation}>
+            <m.img className={style.img} src={finder} alt="finder" />
+            </LazyMotion>
             <p className={style.used_text}>[HTML, CSS, React, Axios]</p>
             <p className={style.text}>Position: Developer.</p>
             
@@ -135,7 +137,9 @@ export const Portfolio = () => {
         >
           <h3 className={style.subtitle}>Hellenglish</h3>
           <div onClick={() => setIsActive(helleng)} className={style.group}>
-            <img className={style.img} src={helleng} alt="helleng" />
+          <LazyMotion features={domAnimation}>
+            <m.img className={style.img} src={helleng} alt="helleng" />
+            </LazyMotion>
             <p className={style.used_text}>[HTML, CSS, SASS, BEM]</p>
             <p className={style.text}>Position: Developer.</p>
             <ul className={style.textList}>
@@ -162,18 +166,22 @@ export const Portfolio = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
       >
         
-         
-            <motion.img
+        <LazyMotion features={domAnimation}>
+      
+    
+            <m.img
             key={isActive}
             initial={{y:"-32px", opacity:0}}
             animate={{y:"0", opacity:1}}
-              transition={{ type: 'spring', duration: 0.7 }}
+              
               src={isActive}
               whileHover={{ scale: 1.01 }}
               className={style.primary_img}
               alt={isActive}
+             
+        
             />
-          
+          </LazyMotion>
        
 
         <div className={style.btn_wrap}>

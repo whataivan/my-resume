@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import style from './App.module.css';
 
 import { setActive } from 'redux/actice-slice';
-import { motion } from 'framer-motion';
+import { motion, LazyMotion, domAnimation, m } from 'framer-motion';
 import { Portfolio } from './Portfolio/Portfolio';
 import { Main } from 'components/Main/Main';
 import { Skills } from './Skills/Skills';
@@ -72,8 +72,10 @@ export const App = () => {
           className={isActive === 3 ? style.portfolio_active : style.portfolio}
           onClick={() => dispatch(setActive(3))}
         >
+          
           {isActive === 3 ? (
-            <motion.div
+            <LazyMotion features={domAnimation}>
+              <m.div
               initial={{ opacity: 0, scale: 0.3 }}
               key={isActive}
               animate={{ opacity: 1, scale: 1 }}
@@ -81,10 +83,12 @@ export const App = () => {
               transition={{ duration: 0.3, delay: 0.3 }}
             >
               <Portfolio />
-            </motion.div>
+            </m.div>
+            </LazyMotion>
           ) : (
             <h2 className={style.disabled}>PORTFOLIO</h2>
           )}
+          
         </motion.div>
 {/* ---------------4444444444----------------------------------------------------------------------------------------------------------------- */}
         <motion.div

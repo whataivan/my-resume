@@ -49,7 +49,7 @@ export const Skills = () => {
           {techSkills.map((el, i) => {
             return (
               
-              <Reorder.Item value={el} key={el}  className={style.item}>
+              <Reorder.Item whileDrag={{scale: 1.07}} value={el} key={el}  className={style.item}>
                 {' '}
                 <p className={style.text}>{el}</p>
               </Reorder.Item>
@@ -63,7 +63,7 @@ export const Skills = () => {
         <Reorder.Group className={style.list} axis='y' as='ul' values={softSkills}  onReorder={setSoftSkills}>
           {softSkills.map((el, i) => {
             return (
-              <Reorder.Item value={el} key={el}  className={style.item}>
+              <Reorder.Item whileDrag={{scale: 1.07}} value={el} key={el}  className={style.item}>
                 {' '}
                 <p className={style.text}>{el}</p>
               </Reorder.Item>
