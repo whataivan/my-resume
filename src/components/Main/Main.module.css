@@ -19,26 +19,38 @@
     inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
   opacity: 1.5;
   /* border: 1px solid rgb(219, 210, 210); */
-  margin-top: 150px;
-  margin-left: 100px;
+  /* margin-top: 150px; */
+  
   margin-right: 80px;
 }
 .group {
-  transform: all 1s linear;
+  /* transform: all 1s linear; */
 
   margin-top: 110px;
   flex-direction: row;
 }
+.front_side{
+  box-shadow: inset rgba(124, 124, 109, 0.5)  1px 1px 1px;
+  margin-left: 60px;
+  display: flex;
+ align-items: center;
+  backdrop-filter: blur(70px);
+  padding: 10px 25px;
+  border-radius: 35px;
+}
 .title {
+  color: rgb(96, 88, 74);
   font-size: 35px;
   font-weight: 600;
 }
 
 .subtitle {
+  color: rgb(96, 88, 74);
   margin-top: 30px;
-  color: rgb(184, 172, 158);
+  
 }
 .text {
+  color: rgb(96, 88, 74);
   margin-top: 50px;
   width: 600px;
   line-height: 25px;
@@ -49,7 +61,9 @@
   padding: 0;
   margin-bottom: 0;
   display: flex;
-  margin-top: 60px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: space-between;
   width: 280px;
@@ -84,8 +98,10 @@
 .btn {
     color: wheat;
     backdrop-filter: blur(18px);
-  margin-top: 100px;
-  margin-left: -60px;
+    margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  
   border: 2px solid wheat;
   width: 400px;
   height: 50px;

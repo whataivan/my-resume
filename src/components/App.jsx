@@ -1,15 +1,18 @@
 import { MainContainer } from './MainContainer/MainContainer';
-// import { About } from "./About/About";
+
 import { useDispatch, useSelector } from 'react-redux';
 import style from './App.module.css';
-
+import { Swip } from './swip';
 import { setActive } from 'redux/actice-slice';
-import { motion, LazyMotion, domAnimation, m } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Portfolio } from './Portfolio/Portfolio';
 import { Main } from 'components/Main/Main';
 import { Skills } from './Skills/Skills';
 import { getActive } from 'redux/actice-selectors';
-//------------------------------------
+import { About } from './About/About';
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
+// //------------------------------------
 
 export const App = () => {
   const isActive = useSelector(getActive);
@@ -57,7 +60,7 @@ export const App = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3, delay: 0.3 }}
             >
-              <Main />
+              <About />
             </motion.div>
           ) : (
             <h2 className={style.disabled}>ABOUT_ME</h2>
@@ -72,25 +75,18 @@ export const App = () => {
           className={isActive === 3 ? style.portfolio_active : style.portfolio}
           onClick={() => dispatch(setActive(3))}
         >
-          
           {isActive === 3 ? (
-            <LazyMotion features={domAnimation}>
-              <m.div
-              initial={{ opacity: 0, scale: 0.3 }}
-              key={isActive}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3, delay: 0.3 }}
-            >
+            <motion.div initial={{ opacity: 0,  }}
+            animate={{ opacity: 1,  }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}>
               <Portfolio />
-            </m.div>
-            </LazyMotion>
+            </motion.div>
           ) : (
             <h2 className={style.disabled}>PORTFOLIO</h2>
           )}
-          
         </motion.div>
-{/* ---------------4444444444----------------------------------------------------------------------------------------------------------------- */}
+        {/* ---------------4444444444----------------------------------------------------------------------------------------------------------------- */}
         <motion.div
           transition={{
             default: { ease: 'linear' },

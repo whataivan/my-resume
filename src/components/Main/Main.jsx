@@ -2,7 +2,7 @@ import style from '../Main/Main.module.css';
 import me from '../../images/me.png';
 import resume from '../../files/Ivan_Pikun_junior_react.pdf';
 import { motion } from 'framer-motion';
-import svg from '../../images/socials//symbol-defs.svg';
+import svg from '../../images/socials/symbol-defs.svg';
 
 export const Main = () => {
   const socials =[`${svg}#linkedin`, `${svg}#github`,`${svg}#facebook`, `${svg}#instagram`]
@@ -18,9 +18,11 @@ export const Main = () => {
     //     >
 
     <div className={style.main}>
-      <img className={style.me_img} src={me} width="200" alt="Me" />
+      
       <div className={style.group}>
-        <h3 className={style.title}>Hello, my name is Ivan Pikun.</h3>
+        <div className={style.front_side}>
+        <img className={style.me_img} src={me} width="200" alt="Me" />
+        <div><h3 className={style.title}>Hello, my name is Ivan Pikun.</h3>
         <h4 className={style.subtitle}>Front-end developer</h4>
         <p className={style.text}>
           I am Front-end junior developer. High motivation person with a good
@@ -29,7 +31,8 @@ export const Main = () => {
           skills. Host vide spectre of webinars, have leadership attitudes.
           Reliable, organized, and ready to take responsibility and evolve in my
           specialization.
-        </p>
+        </p></div>
+        </div>
         <motion.button transition={{duration: 0.1}} whileHover={{backgroundColor:'rgb(106, 94, 72)'}} className={style.btn} type="button">
           <a className={style.link} href={resume} download>
             DOWNLOAD CV
@@ -47,27 +50,7 @@ export const Main = () => {
             </li>)
           })}
           
-          {/* <li className={style.socials_item}>
-            <a href="https://www.linkedin.com/in/ivan-pikun-94367423b/">
-            <svg className={style.icon} >
-                <use href={`${svg}#github`}/>
-              </svg>
-            </a>
-          </li>
-          <li className={style.socials_item}>
-            <a href="https://www.linkedin.com/in/ivan-pikun-94367423b/">
-            <svg className={style.icon} >
-                <use href={`${svg}#facebook`}/>
-              </svg>
-            </a>
-          </li>
-          <li className={style.socials_item}>
-            <a href="https://www.linkedin.com/in/ivan-pikun-94367423b/">
-            <svg className={style.icon} >
-                <use href={`${svg}#instagram`}/>
-              </svg>
-            </a>
-          </li> */}
+          
           
         </ul>
         

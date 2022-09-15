@@ -2,7 +2,7 @@
      
     text-align: center;
     width: 400px;
-   
+   background-size: cover;
     color: #fff;
     transform: rotate(-90deg);
     font-size: 30px;
@@ -14,10 +14,10 @@
     display: flex;
    align-items: center;
    justify-content: center;
-  height: 75vh;
+   
   width: 100px;
     
-   
+  height: 720px;
    
     margin-right: 30px;
     border-radius: 50px;
@@ -30,7 +30,7 @@
     /* opacity: 0.7; */
     margin-right: 30px;
   
-    height: 75vh;
+    height: 720px;
     background: url('../images/1.jpg');
     border-radius: 50px;
     background-size: cover;
@@ -38,6 +38,7 @@
   }
   
   .about{
+    height: 720px;
     display: flex;
    align-items: center;
    justify-content: center;
@@ -47,11 +48,11 @@
     background: url('../images/2.jpg');
   }
   .about_active{
-    opacity: 0.7;
+    
     margin-right: 30px;
-  width: 65vw;
-    height: 75vh;
-    background: url('../images/2.jpg');
+    width: 65vw;
+    height: 720px;
+    background: url('https://cdn.pixabay.com/photo/2022/09/07/01/46/mountains-7437721_960_720.jpg');
     border-radius: 50px;
     background-size: cover;
     
@@ -72,11 +73,11 @@
     /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
-      height: 75vh;
+    height: 720px;
       background: url('../images/3.jpg');
       border-radius: 50px;
       background-size: cover;
-      
+      overflow: hidden;
   }
   
   
@@ -94,7 +95,7 @@
     /* opacity: 0.7; */
     margin-right: 30px;
     width: 65vw;
-      height: 75vh;
+    height: 720px;
       background: url('../images/4.png');
       border-radius: 50px;
       background-size: cover;
