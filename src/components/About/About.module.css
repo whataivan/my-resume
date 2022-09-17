@@ -11,7 +11,7 @@
   display: flex;
   margin-left: 60px;
   margin-right: auto;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .topSide_item {
   position: relative;
