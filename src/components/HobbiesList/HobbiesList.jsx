@@ -1,6 +1,6 @@
 import svg from '../../images/hobbies/symbol-defs.svg';
 import style from '../HobbiesList/HobbiesList.module.css';
-
+import { motion } from 'framer-motion';
 //----------------------------------
 export const HobbiesList = () => {
   const hobbies = [
@@ -22,10 +22,10 @@ export const HobbiesList = () => {
     <ul  className={style.hobbies_list}>
       {hobbies.map(({ icon, title }) => {
         return (
-          <li className={style.hobbies_item} key={title}>
-            <svg className={style.hobbies_icon} width="25" height="25">
+          <li  className={style.hobbies_item} key={title}>
+            <motion.svg  whileHover={{scale: 1.1}} className={style.hobbies_icon} width="25" height="25">
               <use href={icon} />
-            </svg>
+            </motion.svg>
             <p className={style.hobbies_text}>{title}</p>
           </li>
         );

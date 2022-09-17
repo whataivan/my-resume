@@ -2,7 +2,7 @@ import { MainContainer } from './MainContainer/MainContainer';
 
 import { useDispatch, useSelector } from 'react-redux';
 import style from './App.module.css';
-import { Swip } from './swip';
+
 import { setActive } from 'redux/actice-slice';
 import { motion } from 'framer-motion';
 import { Portfolio } from './Portfolio/Portfolio';

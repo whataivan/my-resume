@@ -30,13 +30,15 @@
   flex-direction: row;
 }
 .front_side{
-  box-shadow: inset rgba(124, 124, 109, 0.5)  1px 1px 1px;
+  
   margin-left: 60px;
   display: flex;
  align-items: center;
   backdrop-filter: blur(70px);
   padding: 10px 25px;
   border-radius: 35px;
+  border-bottom: 0.5px solid wheat;
+  border-top: 0.5px solid wheat;
 }
 .title {
   color: rgb(96, 88, 74);

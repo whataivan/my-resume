@@ -24,7 +24,7 @@
     
     font-size: 15px;
     font-weight: normal;
-   
+    border-bottom: 0.5px solid wheat;
     
 }
 
@@ -39,11 +39,13 @@ backdrop-filter: blur(25px);
 background: url('https://cdn.pixabay.com/photo/2014/04/05/11/09/blue-background-314806_960_720.jpg');
 background: transparent;
 /* opacity: 0.7; */
-
+border: 0.5px solid transparent;
+border-bottom: 0.5px solid wheat;
+border-top: 0.5px solid wheat;
 /* box-shadow: 10px 10px 10px 10px   white inset; */
 }
 .hobbies_item{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 display: flex;
 flex-direction: column;
 justify-content: center;
