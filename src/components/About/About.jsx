@@ -17,14 +17,17 @@ export const About = () => {
     {
       title: 'Education',
       img: [kpiFirst, kpiTwo, kpiThree],
-      text: 'something',
+      text: `I studied java, assembler, microprocessors at Kyiv Polytechnic Institute. My faculty is aerospace systems.
+       My specialization is metrology and measurements technologies.
+       At the institute, I got a lot of life experience and met many friends important for my future.`,
       range: '2011-2017',
       subtitle: 'Kyiv Polytechnic Institute',
     },
     {
       title: 'Work',
       img: [workFirst, workTwo, workThree],
-      text: 'something',
+      text: `Position: sales manager, In this company i learned how negotiate with different
+      types of clients, hosted trading and educational webinars. Сreated training scripts for managers and worked in a team.`,
       range: '2017-2022',
       subtitle: '24Option Trading company',
     },
@@ -42,36 +45,31 @@ export const About = () => {
     <div className={style.container}>
       <HobbiesList />
       <div>
-      <ul className={style.topSide_list}>
-        {/* <motion.img transition={{duration: 1}} key={activeImage} initial={{opacity: 0.3}} animate={{opacity: 1}} exit={{opacity:0}} tra className={style.topSide_image} src={activeImage} /> */}
+        <ul className={style.topSide_list}>
+          {/* <motion.img transition={{duration: 1}} key={activeImage} initial={{opacity: 0.3}} animate={{opacity: 1}} exit={{opacity:0}} tra className={style.topSide_image} src={activeImage} /> */}
 
-        {educationAndWork.map(({ title, text, range, img, subtitle }) => (
-          <li className={style.topSide_item}>
-            <Slider {...settings} className={style.slider}>
-              {img.map(e => {
-                return (
-                  <div key={e}>
-                    <img className={style.topSide_image} src={e} alt={e} />
-                  </div>
-                );
-              })}
-            </Slider>
+          {educationAndWork.map(({ title, text, range, img, subtitle }) => (
+            <li className={style.topSide_item}>
+              <Slider {...settings} className={style.slider}>
+                {img.map(e => {
+                  return (
+                    <div key={e}>
+                      <img className={style.topSide_image} src={e} alt={e} />
+                    </div>
+                  );
+                })}
+              </Slider>
 
-            <h3 className={style.topSide_title}>{title}</h3>
+              <h3 className={style.topSide_title}>{title}</h3>
 
-            <h4 className={style.topSide_subtitle}>{subtitle}</h4>
-            <p className={style.topSide_range}>{range}</p>
+              <h4 className={style.topSide_subtitle}>{subtitle}</h4>
+              <p className={style.topSide_range}>{range}</p>
 
-            <p className={style.topSide_text}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              facere laboriosam porro ad, mollitia dicta ipsam distinctio
-              debitis doloribus eligendi deleniti facilis, corrupti eveniet a
-              esse fuga dolore quidem soluta!
-            </p>
-          </li>
-        ))}
-      </ul>
-      <TimeLine/>
+              <p className={style.topSide_text}>{text}</p>
+            </li>
+          ))}
+        </ul>
+        <TimeLine />
       </div>
     </div>
   );

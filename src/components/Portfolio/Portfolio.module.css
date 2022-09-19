@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  
 }
 
 .list {
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -23,13 +24,13 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
 .group {
 
   background: url('../../images/bg.JPG');
   display: flex;
-  /* background: transparent;  */
-  /* backdrop-filter: blur(50px); */
-/* justify-content: center; */
+  
 align-items: center;
   flex-direction: column;
 
@@ -41,7 +42,22 @@ align-items: center;
 
   background-size: cover;
 }
+.group_active{
+  background: url('../../images/bg.JPG');
+  display: flex;
+  
+align-items: center;
+  flex-direction: column;
 
+  width: 210px;
+  height: 270px;
+  margin-right: 25px;
+
+  border-radius: 20px;
+
+  background-size: cover;
+  border-bottom: 0.5px solid white ;
+}
 .img {
     
   border-bottom: 3px solid black;
@@ -54,21 +70,20 @@ align-items: center;
   margin-bottom: 9px;
   color: aliceblue;
 
-  /* margin-left: 50px; */
+ 
   margin-left: 60px;
   margin-right: auto;
 }
-.textList{
- 
-}
+
 .item{
   position: relative;
 }
+
 .item:before {
   position: absolute;
-  color: white; /* Цвет маркера */
-  content: "•"; /* Маркер */
-  padding-right: 7px; /* Отступ от маркера до текста */
+  color: white; 
+  content: "•"; 
+  padding-right: 7px; 
   top: 0;
   left: -15px;
  }
@@ -90,7 +105,7 @@ align-items: center;
   color: blanchedalmond;
 }
 
-.primary_img {
+.main_img {
     
   width:585px;
   height: 280px;

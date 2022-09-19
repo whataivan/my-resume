@@ -54,11 +54,11 @@ export const App = () => {
         >
           {isActive === 2 ? (
             <motion.div
-              initial={{ opacity: 0, scale: 0.3 }}
+              initial={{ opacity: 0,  }}
               key={isActive}
-              animate={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 1,  blur:"3px"}}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.3,  }}
             >
               <About />
             </motion.div>
@@ -79,7 +79,7 @@ export const App = () => {
             <motion.div initial={{ opacity: 0,  }}
             animate={{ opacity: 1,  }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 }}>
+            transition={{ duration: 0.5, delay: 0.3 }}>
               <Portfolio />
             </motion.div>
           ) : (

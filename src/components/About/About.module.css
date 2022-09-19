@@ -9,7 +9,7 @@
 .topSide_list {
   margin-top: 30px;
   display: flex;
-  margin-left: 60px;
+  margin-left: 85px;
   margin-right: auto;
   justify-content: flex-start;
 }
@@ -21,7 +21,7 @@
   align-items: center;
   background: transparent;
   border-radius: 25px;
-  width: 320px;
+  width: 330px;
   height: 410px;
   backdrop-filter: blur(50px);
   border-bottom: 0.5px solid wheat;
@@ -44,7 +44,7 @@
   
   opacity: 0.6;
   border-radius: 15px 15px 0 0;
-  width: 320px;
+  width: 100%;
   height: 160px;
 }
 
@@ -85,5 +85,5 @@
 .topSide_text{
  color: wheat;
  padding: 0 15px  ;
- 
+ line-height: 120%;
 }

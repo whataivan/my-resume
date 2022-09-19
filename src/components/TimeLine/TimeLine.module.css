@@ -1,20 +1,22 @@
 .container {
   margin-top: 45px;
-  margin-left: 100px;
+  margin-left: 153px;
 }
 .line {
   background-color: wheat;
   height: 5px;
-  width: 670px;
+  width: 640px;
   border-radius: 3px;
 }
 .timeLine_list {
+  margin-right: 25px;
   display: flex;
   padding: 0;
 }
 .timeLine_listBottom {
     display: flex;
     padding: 0;
+    margin-left: 80px;
   }
 .timeLine_item {
   position: relative;
@@ -27,11 +29,30 @@
 
   border-radius: 15px;
   backdrop-filter: blur(50px);
-  margin-right: 20px;
+  margin-right: 25px;
   border-bottom: 0.5px solid wheat;
 }
-.timeLine_group {
-}
+.timeLine_item::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    background-color: wheat;
+    top: 53px;
+    left: 49.5%;
+  }
+  .timeLine_item::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translateX(-44%);
+    background-color: rgb(81, 71, 172);
+    border: 3px solid wheat;
+    top: 66px;
+    left: 50%;
+  }
 .timeLine_itemBottom {
   position: relative;
   display: flex;
@@ -40,18 +61,32 @@
 
   border-radius: 15px;
   backdrop-filter: blur(50px);
-  margin-right: 20px;
+  margin-right: 25px;
+  
   border-top: 0.5px solid wheat;
 }
-.timeLine_item::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 20px;
-  background-color: wheat;
-  top: 50px;
-  left: 50%;
-}
+.timeLine_itemBottom::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    background-color: wheat;
+    bottom: 53px;
+    left: 50%;
+    
+  }
+  .timeLine_itemBottom::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translateX(-36%);
+    background-color: rgb(81, 71, 172);
+    bottom: 66px;
+    left: 50%;
+    border: 3px solid wheat;
+  }
 .timeLine_year {
   margin: 0;
   color: wheat;

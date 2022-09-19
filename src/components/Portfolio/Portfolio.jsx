@@ -92,10 +92,10 @@ export const Portfolio = () => {
               key={i}
               transition={{ duration: 0.3 }}
               whileTap={{ y: 10 }}
-              className={style.list_item}
+              
             >
               <h3 className={style.subtitle}>{title}</h3>
-              <div onClick={() => setIsActive(src)} className={style.group}>
+              <div onClick={() => setIsActive(src)} className={isActive===src?style.group_active: style.group}>
                 <LazyLoadImage className={style.img} src={src} alt={title} />
                 <p className={style.used_text}>{used}</p>
                 <p className={style.orange_text}>{position}</p>
@@ -125,7 +125,7 @@ export const Portfolio = () => {
             animate={{ y: '0', opacity: 1 }}
             src={isActive}
             whileHover={{ scale: 1.01 }}
-            className={style.primary_img}
+            className={style.main_img}
             alt={isActive}
           />
         

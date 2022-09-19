@@ -34,7 +34,7 @@
     background: url('../images/1.jpg');
     border-radius: 50px;
     background-size: cover;
-    
+    overflow: hidden;
   }
   
   .about{
@@ -55,7 +55,7 @@
     background: url('https://cdn.pixabay.com/photo/2022/09/07/01/46/mountains-7437721_960_720.jpg');
     border-radius: 50px;
     background-size: cover;
-    
+    overflow: hidden;
   }
   
   .portfolio{
@@ -99,6 +99,7 @@
       background: url('../images/4.png');
       border-radius: 50px;
       background-size: cover;
+      overflow: hidden;
      
   }
   
