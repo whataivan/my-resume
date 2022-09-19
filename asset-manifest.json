@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.e6f0d5df.css",
-    "main.js": "/my-resume/static/js/main.cde9ad17.js",
-    "static/media/4.png": "/my-resume/static/media/4.983008ec615f4f84d598.png",
+    "main.css": "/my-resume/static/css/main.c7c295f6.css",
+    "main.js": "/my-resume/static/js/main.2b467f0b.js",
     "static/media/kpi3.jpg": "/my-resume/static/media/kpi3.b06a2fb50d99244c5bea.jpg",
     "static/media/me.png": "/my-resume/static/media/me.67ede7d166fdac31a446.png",
     "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.3feae5dabb7b4df48d85.pdf",
     "static/media/3.jpg": "/my-resume/static/media/3.9bf2ceac5b99f8997196.jpg",
     "static/media/kpi1.jpg": "/my-resume/static/media/kpi1.3eaa10efe3b4f6334b35.jpg",
+    "static/media/4.jpg": "/my-resume/static/media/4.4013973613d04909ed1a.jpg",
     "static/media/1.jpg": "/my-resume/static/media/1.40b517ef5030125925d4.jpg",
     "static/media/finder.jpg": "/my-resume/static/media/finder.67e33b166fd15e75fab3.jpg",
     "static/media/kpi2.jpg": "/my-resume/static/media/kpi2.3dc0eaf3d4bb8cd0ec2e.jpg",
@@ -26,11 +26,11 @@
     "static/media/slick.ttf": "/my-resume/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/my-resume/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-resume/index.html",
-    "main.e6f0d5df.css.map": "/my-resume/static/css/main.e6f0d5df.css.map",
-    "main.cde9ad17.js.map": "/my-resume/static/js/main.cde9ad17.js.map"
+    "main.c7c295f6.css.map": "/my-resume/static/css/main.c7c295f6.css.map",
+    "main.2b467f0b.js.map": "/my-resume/static/js/main.2b467f0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6f0d5df.css",
-    "static/js/main.cde9ad17.js"
+    "static/css/main.c7c295f6.css",
+    "static/js/main.2b467f0b.js"
   ]
 }
