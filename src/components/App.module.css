@@ -45,14 +45,14 @@
     margin-right: 30px;
     border-radius: 50px;
     background-size: cover;
-    background: url('../images/2.jpg');
+    background: url('../images/2bg.JPG');
   }
   .about_active{
     
     margin-right: 30px;
     width: 65vw;
     height: 720px;
-    background: url('https://cdn.pixabay.com/photo/2022/09/07/01/46/mountains-7437721_960_720.jpg');
+    background: url('../images/2.jpg');
     border-radius: 50px;
     background-size: cover;
     overflow: hidden;
