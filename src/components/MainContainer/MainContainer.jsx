@@ -1,6 +1,6 @@
 import style from '../MainContainer/MainContainer.module.css';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+
 import { getTheme } from 'redux/actice-selectors';
 import { useSelector } from 'react-redux';
 

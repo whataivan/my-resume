@@ -11,7 +11,7 @@ export const ThemeSwitcher = () => {
   return (
     <button className={style.btn_backdrop} onClick={()=>dispatch(setTheme())}>
       
-        <motion.svg key={theme}  initial={{opacity:0.3}}  animate={{opacity:1}} exit={{opacity:0.3}} transition={{duration:0.4}}  className={theme?style.btn_icon:style.btn_iconNight} >
+        <motion.svg key={theme}  initial={{opacity:0.3}}  animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.4}}  className={theme?style.btn_icon:style.btn_iconNight} >
               <use href={theme? `${svg}#moon`:`${svg}#sun`} />
             </motion.svg>
       
