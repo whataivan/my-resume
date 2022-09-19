@@ -88,7 +88,7 @@
     margin-right: 30px;
     border-radius: 50px;
     background-size: cover;
-    background: url('../images/4.png');
+    background: url('../images/4.jpg');
   }
   .skills_active{
     
@@ -96,7 +96,7 @@
     margin-right: 30px;
     width: 65vw;
     height: 720px;
-      background: url('../images/4.png');
+      background: url('../images/4.jpg');
       border-radius: 50px;
       background-size: cover;
       overflow: hidden;

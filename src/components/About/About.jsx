@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 import { TimeLine } from 'components/TimeLine/TimeLine';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { HobbiesList } from 'components/HobbiesList/HobbiesList';
 //========================================
 export const About = () => {
@@ -49,7 +49,7 @@ export const About = () => {
           {/* <motion.img transition={{duration: 1}} key={activeImage} initial={{opacity: 0.3}} animate={{opacity: 1}} exit={{opacity:0}} tra className={style.topSide_image} src={activeImage} /> */}
 
           {educationAndWork.map(({ title, text, range, img, subtitle }) => (
-            <li className={style.topSide_item}>
+            <motion.li className={style.topSide_item} whileHover={{y: "-2px"}} initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
               <Slider {...settings} className={style.slider}>
                 {img.map(e => {
                   return (
@@ -66,7 +66,7 @@ export const About = () => {
               <p className={style.topSide_range}>{range}</p>
 
               <p className={style.topSide_text}>{text}</p>
-            </li>
+            </motion.li>
           ))}
         </ul>
         <TimeLine />
