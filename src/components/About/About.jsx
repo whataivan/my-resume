@@ -22,6 +22,7 @@ export const About = () => {
        At the institute, I got a lot of life experience and met many friends important for my future.`,
       range: '2011-2017',
       subtitle: 'Kyiv Polytechnic Institute',
+      id: 1
     },
     {
       title: 'Work',
@@ -30,6 +31,7 @@ export const About = () => {
       types of clients, hosted trading and educational webinars. Сreated training scripts for managers and worked in a team.`,
       range: '2017-2022',
       subtitle: '24Option Trading company',
+      id: 2
     },
   ];
   const settings = {
@@ -46,10 +48,10 @@ export const About = () => {
       <HobbiesList />
       <div>
         <ul className={style.topSide_list}>
-          {/* <motion.img transition={{duration: 1}} key={activeImage} initial={{opacity: 0.3}} animate={{opacity: 1}} exit={{opacity:0}} tra className={style.topSide_image} src={activeImage} /> */}
+          
 
-          {educationAndWork.map(({ title, text, range, img, subtitle }) => (
-            <motion.li className={style.topSide_item} whileHover={{y: "-2px"}} initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
+          {educationAndWork.map(({ title, text, range, img, subtitle, id }) => (
+            <motion.li className={style.topSide_item} key={id} whileHover={{y: "-2px"}} initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
               <Slider {...settings} className={style.slider}>
                 {img.map(e => {
                   return (

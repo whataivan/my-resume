@@ -2,7 +2,7 @@ import { MainContainer } from './MainContainer/MainContainer';
 
 import { useDispatch, useSelector } from 'react-redux';
 import style from './App.module.css';
-
+import { ThemeSwitcher } from './ThemeSwitcher/ThemeSwitcher';
 import { setActive } from 'redux/actice-slice';
 import { motion } from 'framer-motion';
 import { Portfolio } from './Portfolio/Portfolio';
@@ -10,17 +10,23 @@ import { Main } from 'components/Main/Main';
 import { Skills } from './Skills/Skills';
 import { getActive } from 'redux/actice-selectors';
 import { About } from './About/About';
+import { useState } from 'react';
 // import "~slick-carousel/slick/slick.css"; 
 // import "~slick-carousel/slick/slick-theme.css";
 // //------------------------------------
 
 export const App = () => {
   const isActive = useSelector(getActive);
+  const [themeState, setThemeState] = useState(false);
+  const themeSwitcher=(themeState)=>{
+    setThemeState(!themeState)
 
+  }
   const dispatch = useDispatch();
   return (
     <>
-      <MainContainer>
+      <MainContainer themeState={themeState}>
+      <ThemeSwitcher themeSwitcher={themeSwitcher} />
         <motion.div
           transition={{
             default: { ease: 'linear' },

@@ -1,8 +1,19 @@
 .backdrop {
-  padding: 100px 50px;
-  display: flex;
- /* align-items: center; */
-  justify-content: center;
   
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: white;
 }
+.backdrop_night {
+  
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #271a1a, #080035)
+}
+

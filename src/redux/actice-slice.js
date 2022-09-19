@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 ;
 
 const initialState = {
-    active: 1
+    active: 1,
+    themeState: false
 }
 
 const activeSlice = createSlice({
@@ -11,8 +12,13 @@ const activeSlice = createSlice({
     reducers: {
        setActive:(state, { payload })=>{
         state.active = payload
-       }
+       },
+       setTheme:(state)=>{
+        state.themeState = !state.themeState
+       },
+
     }
 })
 export const {setActive} =activeSlice.actions
+export const {setTheme} =activeSlice.actions
 export default activeSlice.reducer
