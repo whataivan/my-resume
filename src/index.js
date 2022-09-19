@@ -5,12 +5,13 @@ import { App } from 'components/App';
 import './index.css';
 import { Provider } from 'react-redux'
 import {store} from './redux/store'
+import {persistor} from './redux/store.js'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <persistGate loading={null} persistor={persistor}> */}
+    <persistGate loading={null} persistor={persistor}>
     <Provider store={store} > 
     <App/>
     </Provider>
-    {/* </persistGate> */}
+    </persistGate>
   </React.StrictMode>
 );
