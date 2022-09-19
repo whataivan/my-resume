@@ -131,7 +131,7 @@ flex-direction: column;
 .btn_wrap{
 display: flex;
 flex-direction: row;
-margin-top: 25px;
+margin-top: 20px;
 
 }
 .first_btn {
