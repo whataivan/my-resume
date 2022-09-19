@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.4d6dc941.css",
+    "main.css": "/my-resume/static/css/main.774c1cd5.css",
     "main.js": "/my-resume/static/js/main.cde9ad17.js",
     "static/media/4.png": "/my-resume/static/media/4.983008ec615f4f84d598.png",
     "static/media/kpi3.jpg": "/my-resume/static/media/kpi3.b06a2fb50d99244c5bea.jpg",
@@ -18,6 +18,7 @@
     "static/media/option2.jpg": "/my-resume/static/media/option2.1ae3e953edf24120b6ac.jpg",
     "static/media/kapusta.jpg": "/my-resume/static/media/kapusta.33079b1966512d2aef0c.jpg",
     "static/media/2.jpg": "/my-resume/static/media/2.9952fb536b9e8cfe900e.jpg",
+    "static/media/2bg.JPG": "/my-resume/static/media/2bg.659fb2bdc84980d4ce37.JPG",
     "static/media/bg.JPG": "/my-resume/static/media/bg.404abebe47554b7e8f57.JPG",
     "static/media/symbol-defs.svg": "/my-resume/static/media/symbol-defs.742d021b73ce36879c95831ad9e85121.svg",
     "static/media/slick.svg": "/my-resume/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -25,11 +26,11 @@
     "static/media/slick.ttf": "/my-resume/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/my-resume/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-resume/index.html",
-    "main.4d6dc941.css.map": "/my-resume/static/css/main.4d6dc941.css.map",
+    "main.774c1cd5.css.map": "/my-resume/static/css/main.774c1cd5.css.map",
     "main.cde9ad17.js.map": "/my-resume/static/js/main.cde9ad17.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d6dc941.css",
+    "static/css/main.774c1cd5.css",
     "static/js/main.cde9ad17.js"
   ]
 }
