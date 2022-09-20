@@ -13,12 +13,12 @@ const activeSlice = createSlice({
        setActive:(state, { payload })=>{
         state.active = payload
        },
-       setTheme:(state)=>{
+       switchTheme:(state)=>{
         state.themeState = !state.themeState
        },
 
     }
 })
 export const {setActive} =activeSlice.actions
-export const {setTheme} =activeSlice.actions
+export const {switchTheme} =activeSlice.actions
 export default activeSlice.reducer

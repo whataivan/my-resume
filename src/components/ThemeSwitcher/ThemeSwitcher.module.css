@@ -13,9 +13,9 @@
 }
 
 .btn_icon{
-    fill:rgb(255, 255, 255);
+    fill:white;
     position: absolute;
-    top: 1px;
+   
     left: 1px;
     
     width: 20px;
@@ -28,7 +28,7 @@ border: 2px solid rgb(255, 255, 255);
     
     fill:rgb(66, 48, 15);
     position: absolute;
-    bottom: 1px;
+    
     left: 1px;
     
 width: 20px;
