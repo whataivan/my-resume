@@ -6,11 +6,12 @@ import { useSelector } from 'react-redux';
 
 //--------------------------------------------
 export const MainContainer = ({children, themeState}) => {
-  
+  const lightThemeBackground = 'linear-gradient(to right, #fdfcfc, #e3e3e2)'
+  const darkThemeBackground = 'linear-gradient(to right, #271a1a, #080035)'
  const theme=useSelector(getTheme)
   
   return (
-    <motion.div className={theme?style.backdrop:style.backdrop_night}  initial={{opacity:0, scale:0.3}} animate={{opacity:1, scale:1}} transition={{ duration: 0.6, delay: 0.3 }}>
+    <motion.div className={theme?style.backdrop:style.backdrop_night}   animate={{backgroundImage:theme? darkThemeBackground: lightThemeBackground }} transition={{ duration: 0.6, delay: 0.3 }}>
       
       {children}
     </motion.div>

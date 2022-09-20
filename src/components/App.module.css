@@ -23,8 +23,24 @@
   background: url('../images/1.jpg');
   background-size: cover;
 }
+.mainNightTheme{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+
+  height: 720px;
+
+  margin-right: 30px;
+  border-radius: 50px;
+  background: url('../images/1.jpg');
+  background-size: cover;
+  box-shadow: rgb(243 243 249 / 25%) 0px 6px 12px -2px, rgb(248 242 242 / 30%) 0px 3px 7px -3px;
+}
 .mainActive {
-  /* opacity: 0.7; */
+  
   margin-right: 30px;
 
   height: 720px;
@@ -32,6 +48,20 @@
   border-radius: 50px;
   background-size: cover;
   overflow: hidden;
+ 
+
+}
+.mainActiveNightTheme {
+  
+  margin-right: 30px;
+
+  height: 720px;
+  background: url('../images/1.jpg');
+  border-radius: 50px;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: rgb(243 243 249 / 25%) 0px 6px 12px -2px, rgb(248 242 242 / 30%) 0px 3px 7px -3px;
+
 }
 
 .about {

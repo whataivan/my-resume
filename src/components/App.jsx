@@ -8,32 +8,45 @@ import { motion } from 'framer-motion';
 import { Portfolio } from './Portfolio/Portfolio';
 import { Main } from 'components/Main/Main';
 import { Skills } from './Skills/Skills';
-import { getActive } from 'redux/actice-selectors';
+import { getActive, getTheme } from 'redux/actice-selectors';
 import { About } from './About/About';
-import { useState } from 'react';
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
+
 // //------------------------------------
 
 export const App = () => {
   const isActive = useSelector(getActive);
-  const [themeState, setThemeState] = useState(false);
-  const themeSwitcher=(themeState)=>{
-    setThemeState(!themeState)
+  const theme = useSelector(getTheme);
 
-  }
+ 
   const dispatch = useDispatch();
+
+  const getClassName = () => {
+    if (isActive === 1) {
+      if (theme === true) {
+        return style.mainActiveNightTheme;
+      }
+      return style.mainActive;
+    } else {
+      if (theme) {
+        return style.mainNightTheme;
+      }
+      return style.main;
+    } 
+    
+  };
+  
   return (
     <>
-      <MainContainer themeState={themeState}>
-      <ThemeSwitcher themeSwitcher={themeSwitcher} />
+      <MainContainer>
+        <ThemeSwitcher />
         <motion.div
           transition={{
             default: { ease: 'linear' },
           }}
           animate={{ width: isActive === 1 ? 1100 : 100 }}
-          className={isActive === 1 ? style.mainActive : style.main}
-          onClick={() => dispatch(setActive(1))}
+          className={getClassName()}
+          onClick={() => {dispatch(setActive(1))
+          console.log(getClassName())}}
         >
           {isActive === 1 ? (
             <motion.div
@@ -60,11 +73,11 @@ export const App = () => {
         >
           {isActive === 2 ? (
             <motion.div
-              initial={{ opacity: 0,  }}
+              initial={{ opacity: 0 }}
               key={isActive}
-              animate={{ opacity: 1,  blur:"3px"}}
+              animate={{ opacity: 1, blur: '3px' }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3,  }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               <About />
             </motion.div>
@@ -82,10 +95,12 @@ export const App = () => {
           onClick={() => dispatch(setActive(3))}
         >
           {isActive === 3 ? (
-            <motion.div initial={{ opacity: 0,  }}
-            animate={{ opacity: 1,  }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
               <Portfolio />
             </motion.div>
           ) : (
