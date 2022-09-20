@@ -15,121 +15,74 @@ import { About } from './About/About';
 
 export const App = () => {
   const isActive = useSelector(getActive);
-  const theme = useSelector(getTheme);
+  const NightTheme = useSelector(getTheme);
 
- 
   const dispatch = useDispatch();
-
-  const getClassName = () => {
-    if (isActive === 1) {
-      if (theme === true) {
-        return style.mainActiveNightTheme;
-      }
-      return style.mainActive;
-    } else {
-      if (theme) {
-        return style.mainNightTheme;
-      }
-      return style.main;
-    } 
-    
-  };
+  const componentsInfo = [
+    {
+      component: <Main />,
+      title: 'WELCOME!',
+      pageNumber: 1,
+      className: NightTheme? `${style.main} ${style.NightTheme}` : style.main,
+      classNameActive: NightTheme? `${style.mainActive} ${style.NightTheme}` : style.mainActive,
+    },
+    {
+      component: <About />,
+      title: 'ABOUT_ME',
+      pageNumber: 2,
+      className: NightTheme? `${style.about} ${style.NightTheme}` : style.about,
+      classNameActive: NightTheme? `${style.aboutActive} ${style.NightTheme}` : style.aboutActive,
+    },
+    {
+      component: <Portfolio />,
+      title: 'PORTFOLIO',
+      pageNumber: 3,
+      className: NightTheme? `${style.portfolio} ${style.NightTheme}` : style.portfolio,
+      classNameActive: NightTheme? `${style.portfolioActive} ${style.NightTheme}` : style.portfolioActive,
+    },
+    {
+      component: <Skills />,
+      title: 'SKILLS',
+      pageNumber: 4,
+      className: NightTheme? `${style.skills} ${style.NightTheme}` : style.skills,
+      classNameActive: NightTheme? `${style.skillsActive} ${style.NightTheme}` : style.skillsActive,
+    },
+  ];
   
+
   return (
     <>
       <MainContainer>
-        <ThemeSwitcher />
-        <motion.div
-          transition={{
-            default: { ease: 'linear' },
-          }}
-          animate={{ width: isActive === 1 ? 1100 : 100 }}
-          className={getClassName()}
-          onClick={() => {dispatch(setActive(1))
-          console.log(getClassName())}}
-        >
-          {isActive === 1 ? (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.3 }}
-              key={isActive}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <Main />{' '}
-            </motion.div>
-          ) : (
-            <h2 className={style.disabled}>WELCOME!</h2>
-          )}
-        </motion.div>
-        {/* //---------------------------------------------------------22222222222222222 */}
-        <motion.div
-          transition={{
-            default: { ease: 'linear' },
-          }}
-          animate={{ width: isActive === 2 ? 1100 : 100 }}
-          className={isActive === 2 ? style.about_active : style.about}
-          onClick={() => dispatch(setActive(2))}
-        >
-          {isActive === 2 ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              key={isActive}
-              animate={{ opacity: 1, blur: '3px' }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <About />
-            </motion.div>
-          ) : (
-            <h2 className={style.disabled}>ABOUT_ME</h2>
-          )}
-        </motion.div>
-        {/* ---------------333333333333333333----------------------------------------------------------------------------------------------------------------- */}
-        <motion.div
-          transition={{
-            default: { ease: 'linear' },
-          }}
-          animate={{ width: isActive === 3 ? 1100 : 100 }}
-          className={isActive === 3 ? style.portfolio_active : style.portfolio}
-          onClick={() => dispatch(setActive(3))}
-        >
-          {isActive === 3 ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <Portfolio />
-            </motion.div>
-          ) : (
-            <h2 className={style.disabled}>PORTFOLIO</h2>
-          )}
-        </motion.div>
-        {/* ---------------4444444444----------------------------------------------------------------------------------------------------------------- */}
-        <motion.div
-          transition={{
-            default: { ease: 'linear' },
-          }}
-          animate={{ width: isActive === 4 ? 1000 : 100 }}
-          className={isActive === 4 ? style.skills_active : style.skills}
-          onClick={() => dispatch(setActive(4))}
-        >
-          {isActive === 4 ? (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.3 }}
-              key={isActive}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <Skills />
-            </motion.div>
-          ) : (
-            <h2 className={style.disabled}>SKILLS</h2>
-          )}
-        </motion.div>
+      <ThemeSwitcher/>
+        {componentsInfo.map(
+          ({ component, title, pageNumber, classNameActive, className }) => {
+            return (
+              <motion.div
+                transition={{
+                  default: { ease: 'linear' },
+                }}
+                animate={{ width: isActive === pageNumber ? 1100 : 100 }}
+                className={
+                  isActive === pageNumber ? classNameActive : className
+                }
+                onClick={() => dispatch(setActive(pageNumber))}
+              >
+                {isActive === pageNumber ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                  >
+                    {component}
+                  </motion.div>
+                ) : (
+                  <h2 className={style.disabled}>{title}</h2>
+                )}
+              </motion.div>
+            );
+          }
+        )}
       </MainContainer>
     </>
   );

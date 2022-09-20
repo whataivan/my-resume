@@ -23,22 +23,7 @@
   background: url('../images/1.jpg');
   background-size: cover;
 }
-.mainNightTheme{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 100px;
-
-  height: 720px;
-
-  margin-right: 30px;
-  border-radius: 50px;
-  background: url('../images/1.jpg');
-  background-size: cover;
-  box-shadow: rgb(243 243 249 / 25%) 0px 6px 12px -2px, rgb(248 242 242 / 30%) 0px 3px 7px -3px;
-}
 .mainActive {
   
   margin-right: 30px;
@@ -49,18 +34,6 @@
   background-size: cover;
   overflow: hidden;
  
-
-}
-.mainActiveNightTheme {
-  
-  margin-right: 30px;
-
-  height: 720px;
-  background: url('../images/1.jpg');
-  border-radius: 50px;
-  background-size: cover;
-  overflow: hidden;
-  box-shadow: rgb(243 243 249 / 25%) 0px 6px 12px -2px, rgb(248 242 242 / 30%) 0px 3px 7px -3px;
 
 }
 
@@ -74,7 +47,8 @@
   background-size: cover;
   background: url('../images/2bg.JPG');
 }
-.about_active {
+
+.aboutActive {
   margin-right: 30px;
   width: 65vw;
   height: 720px;
@@ -95,7 +69,7 @@
   background: url('../images/3.jpg');
 }
 
-.portfolio_active {
+.portfolioActive {
   /* opacity: 0.7; */
   margin-right: 30px;
   width: 65vw;
@@ -116,7 +90,7 @@
   background-size: cover;
   background: url('../images/4.jpg');
 }
-.skills_active {
+.skillsActive {
   
   margin-right: 30px;
   width: 65vw;
@@ -125,4 +99,10 @@
   border-radius: 50px;
   background-size: cover;
   overflow: hidden;
+}
+.NightTheme{
+ 
+  box-shadow: rgb(243 243 249 / 25%) 0px 6px 12px -2px, rgb(248 242 242 / 30%) 0px 3px 7px -3px;
+  opacity: 0.7;
+  transition: opacity 1s ease-in;
 }
