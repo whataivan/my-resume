@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.3e64e479.css",
-    "main.js": "/my-resume/static/js/main.40b99491.js",
+    "main.js": "/my-resume/static/js/main.e3f4927b.js",
     "static/media/kpi3.jpg": "/my-resume/static/media/kpi3.b06a2fb50d99244c5bea.jpg",
     "static/media/me.png": "/my-resume/static/media/me.67ede7d166fdac31a446.png",
     "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.3feae5dabb7b4df48d85.pdf",
@@ -27,10 +27,10 @@
     "static/media/slick.woff": "/my-resume/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-resume/index.html",
     "main.3e64e479.css.map": "/my-resume/static/css/main.3e64e479.css.map",
-    "main.40b99491.js.map": "/my-resume/static/js/main.40b99491.js.map"
+    "main.e3f4927b.js.map": "/my-resume/static/js/main.e3f4927b.js.map"
   },
   "entrypoints": [
     "static/css/main.3e64e479.css",
-    "static/js/main.40b99491.js"
+    "static/js/main.e3f4927b.js"
   ]
 }
