@@ -92,7 +92,7 @@ export const Portfolio = () => {
               key={i}
               transition={{ duration: 0.3 }}
               whileTap={{ y: 10 }}
-              
+              className={style.list_item}
             >
               <h3 className={style.subtitle}>{title}</h3>
               <div onClick={() => setIsActive(src)} className={isActive===src?style.group_active: style.group}>

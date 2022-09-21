@@ -17,3 +17,52 @@
   background-image: linear-gradient(to right, #271a1a, #080035)
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #fdfcfc, #e3e3e2);
+    transition: background-image 1s linear;
+  } 
+  .backdrop_night {
+    transition: background-image 1s linear;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #271a1a, #080035)
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #fdfcfc, #e3e3e2);
+    transition: background-image 1s linear;
+  } 
+  .backdrop_night {
+    transition: background-image 1s linear;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #271a1a, #080035)
+  }
+
+}

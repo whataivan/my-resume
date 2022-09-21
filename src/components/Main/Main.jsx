@@ -6,16 +6,9 @@ import svg from '../../images/socials/symbol-defs.svg';
 
 export const Main = () => {
   const socials =[`${svg}#linkedin`, `${svg}#github`,`${svg}#facebook`, `${svg}#instagram`]
-  // const isActive = useSelector(getActive)
-  // console.log(isActive);
+  
   return (
-    // <SwitchTransition>
-    // <CSSTransition
-    //       in={isActive === 1}
-    //       timeout={500}
-    //       classNames='item'
-    //       unmountOnExit
-    //     >
+    
 
     <div className={style.main}>
       
