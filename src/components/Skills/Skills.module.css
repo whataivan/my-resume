@@ -63,7 +63,7 @@
     display: flex;
 
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .title {
@@ -103,8 +103,8 @@
     border-radius: 15px;
     color: wheat;
 
-    width: 300px;
-    height: 40px;
+    width: 35vw;
+    height: 4vh;
     align-items: center;
     justify-content: center;
   }

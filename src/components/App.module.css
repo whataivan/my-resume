@@ -117,9 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 
     background: url('../images/1.jpg');
@@ -129,8 +127,7 @@
   }
 
   .mainActive {
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
     height: 720px;
 
     background-size: cover;
@@ -141,8 +138,7 @@
     border-bottom: 3px solid white;
   }
   .about {
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,19 +151,14 @@
 
   .aboutActive {
     background: url('../images/2.jpg');
-    max-width: 768px;
-    width: 100%;
-
-    overflow: hidden;
     width: 100vw;
-
-    border-bottom: 3px solid white;
+    overflow: hidden;
+     border-bottom: 3px solid white;
     background-size: cover;
   }
   .portfolio {
     display: flex;
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
 
     align-items: center;
     justify-content: center;
@@ -179,41 +170,32 @@
   }
 
   .portfolioActive {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     background: url('../images/3.jpg');
     border-bottom: 3px solid white;
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
     
     overflow: hidden;
 
-    border-bottom: 5px solid white;
     background-size: cover;
     border-bottom: 3px solid white;
   }
 
   .skills {
     display: flex;
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: center;
-
-    background: url('../images/4.jpg');
+   background: url('../images/4.jpg');
     overflow: hidden;
     border-bottom: 3px solid white;
     background-size: cover;
   }
   .skillsActive {
-    max-width: 768px;
-    width: 100%;
+    width: 100vw;
 
     overflow: hidden;
-
-
-    background: url('../images/4.jpg');
+   background: url('../images/4.jpg');
     background-size: cover;
   }
   .NightTheme {

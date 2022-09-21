@@ -173,18 +173,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 85vh;
   }
 
   .list {
-    width: 100%;
+    
+    width: 85vw;
     display: flex;
     flex-direction: row;
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 15px;
+   
   }
 
   .list_item {
