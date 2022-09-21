@@ -14,45 +14,42 @@
   padding: 0;
 }
 .timeLine_listBottom {
-    display: flex;
-    padding: 0;
-    margin-left: 80px;
-  }
+  display: flex;
+  padding: 0;
+  margin-left: 80px;
+}
 .timeLine_item {
   position: relative;
-
-  /* border: 1px solid red; */
   display: flex;
-
   flex-direction: column;
   padding: 10px;
-
   border-radius: 15px;
   backdrop-filter: blur(50px);
   margin-right: 25px;
   border-bottom: 0.5px solid wheat;
 }
 .timeLine_item::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 16px;
-    background-color: wheat;
-    top: 53px;
-    left: 49.5%;
-  }
-  .timeLine_item::before {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    transform: translateX(-44%);
-    background-color: rgb(81, 71, 172);
-    border: 3px solid wheat;
-    top: 66px;
-    left: 50%;
-  }
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 16px;
+  background-color: wheat;
+  top: 53px;
+  left: 49.5%;
+}
+.timeLine_item::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateX(-44%);
+  background-color: rgb(81, 71, 172);
+  border: 3px solid wheat;
+  top: 66px;
+  left: 50%;
+  z-index: 5;
+}
 .timeLine_itemBottom {
   position: relative;
   display: flex;
@@ -62,31 +59,31 @@
   border-radius: 15px;
   backdrop-filter: blur(50px);
   margin-right: 25px;
-  
+
   border-top: 0.5px solid wheat;
 }
 .timeLine_itemBottom::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 16px;
-    background-color: wheat;
-    bottom: 53px;
-    left: 50%;
-    
-  }
-  .timeLine_itemBottom::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    transform: translateX(-36%);
-    background-color: rgb(81, 71, 172);
-    bottom: 66px;
-    left: 50%;
-    border: 3px solid wheat;
-  }
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 16px;
+  background-color: wheat;
+  bottom: 53px;
+  left: 50%;
+}
+.timeLine_itemBottom::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateX(-36%);
+  background-color: rgb(81, 71, 172);
+  bottom: 66px;
+  left: 50%;
+  border: 3px solid wheat;
+  z-index: 5;
+}
 .timeLine_year {
   margin: 0;
   color: wheat;

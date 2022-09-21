@@ -52,6 +52,7 @@
     width: 100vw;
     background-image: linear-gradient(to right, #fdfcfc, #e3e3e2);
     transition: background-image 1s linear;
+    
   } 
   .backdrop_night {
     transition: background-image 1s linear;

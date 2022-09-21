@@ -260,11 +260,11 @@
     font-size: 13px;
   }
   .orange_text {
-    /* margin-top: 15px; */
-    margin: 5px 0px 0 8px;
+    font-size: 13px;
+    margin: 5px 0px 0 0px;
 
     color: orange;
-    font-size: 13px;
+    ;
   }
   .used_text {
     font-size: 14px;
@@ -308,7 +308,7 @@
     margin-right: 30px;
     
     color: white;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 10px;
     border: 2px solid rgb(248, 246, 246);
     width: 275px;

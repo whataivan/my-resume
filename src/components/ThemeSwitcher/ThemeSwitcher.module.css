@@ -1,99 +1,88 @@
-
 /* MOBILE---------------------------------------------------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-
 }
 
 /* TBLET----------------------------------------------------------------------------------------- */
 
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .btn_backdrop {
-    
     position: absolute;
-    top: 10px;
-    left: 30px;
-   
-    width: 30px;
-    height: 30px;
-    /* background: url('../../images/1.jpg'); */
-    background-color: transparent;
+    top: -4px;
+    left: 25px;
+    transform: rotate(270deg);
+    width: 33px;
+    height: 65px;
+    background-color: rgba(197, 183, 113, 0.986);
     border: 0;
     border-radius: 20px;
-   z-index: 100;
-  }
-  
-  .btn_icon{
-      fill:white;
-      position: absolute;
-     
-      left: 1px;
-      
-      width: 20px;
-      height: 20px;
-  padding: 3px;
-  border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
-  }
-  .btn_iconNight{
-      
-      fill:rgb(66, 48, 15);
-      position: absolute;
-      
-      left: 1px;
-      
-  width: 20px;
-  height: 20px;
-  padding: 3px;
-  border-radius: 50%;
-  border: 2px solid rgb(66, 48, 15);
+    z-index: 1;
   }
 
+  .btn_icon {
+    fill: white;
+    position: absolute;
 
+    left: 1px;
 
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .btn_iconNight {
+    fill: rgb(66, 48, 15);
+    position: absolute;
+
+    left: 1px;
+
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(66, 48, 15);
+  }
 }
 
- /* DESKPOT----------------------------------------------------------------------------------------- */
+/* DESKPOT----------------------------------------------------------------------------------------- */
 
 @media (min-width: 1200px) {
   .btn_backdrop {
-    
     position: absolute;
     top: 45%;
     left: 75px;
-   
+
     width: 33px;
     height: 65px;
     background: url('../../images/1.jpg');
     border: 0;
     border-radius: 20px;
-   
   }
-  
-  .btn_icon{
-      fill:white;
-      position: absolute;
-     
-      left: 1px;
-      
-      width: 20px;
-      height: 20px;
-  padding: 3px;
-  border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
+
+  .btn_icon {
+    fill: white;
+    position: absolute;
+
+    left: 1px;
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    
   }
-  .btn_iconNight{
-      
-      fill:rgb(66, 48, 15);
-      position: absolute;
-      
-      left: 1px;
-      
-  width: 20px;
-  height: 20px;
-  padding: 3px;
-  border-radius: 50%;
-  border: 2px solid rgb(66, 48, 15);
+  .btn_iconNight {
+    fill: rgb(66, 48, 15);
+    position: absolute;
+    
+    left: 1px;
+
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(66, 48, 15);
   }
 }
