@@ -11,16 +11,7 @@ import { motion} from 'framer-motion';
 export const Portfolio = () => {
   const [isActive, setIsActive] = useState(filmoteka);
   const imgList = [
-    {
-      title: 'Kapusta',
-      src: kapusta,
-      used: '[React, Redux toolkit, Formik, Axios]',
-      position: 'Position: Developer.',
-      textList: [
-        'Work with api, create async thunk and custom select.',
-        'Team work, work with git branches.',
-      ],
-    },
+    
     {
       title: 'Filmoteka',
       src: filmoteka,
@@ -29,6 +20,16 @@ export const Portfolio = () => {
       textList: [
         'Developed reviews section, header and work with local storage.',
         'Code review, work with git branches.',
+      ],
+    },
+    {
+      title: 'Kapusta',
+      src: kapusta,
+      used: '[React, Redux toolkit, Formik, Axios]',
+      position: 'Position: Developer.',
+      textList: [
+        'Work with api, create async thunk and custom select.',
+        'Team work, work with git branches.',
       ],
     },
     {
