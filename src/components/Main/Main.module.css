@@ -36,11 +36,12 @@
     
     display: flex;
    align-items: center;
-    
+   
     padding: 10px 30px;
     
     border-bottom: 1px solid wheat;
     border-top: 1px solid wheat;
+    backdrop-filter: blur(300px);
   }
   .title {
     margin-left: -110px;
@@ -160,8 +161,8 @@
     opacity: 1.5;
     /* border: 1px solid rgb(219, 210, 210); */
     /* margin-top: 150px; */
-    
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 50px;
   }
   .group {
     /* transform: all 1s linear; */
@@ -171,12 +172,12 @@
   }
   .front_side{
     
-    margin-left: 60px;
+    width: 1100px;
     display: flex;
    align-items: center;
     backdrop-filter: blur(70px);
     padding: 10px 25px;
-    border-radius: 35px;
+   
     border-bottom: 0.5px solid wheat;
     border-top: 0.5px solid wheat;
   }
@@ -192,10 +193,12 @@
     
   }
   .text {
+    font-size: 17px;
     color: rgb(96, 88, 74);
     margin-top: 50px;
     width: 600px;
     line-height: 25px;
+    font-weight: 600;
     letter-spacing: 0.02em;
   }
   

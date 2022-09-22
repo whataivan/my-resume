@@ -41,7 +41,7 @@ export const About = () => {
 
     fade: true,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 4500,
   };
   return (
     <div className={style.container}>
