@@ -11,25 +11,27 @@
     top: -0.5vh;
     left: 25px;
     transform: rotate(270deg);
-    width: 33px;
-    height: 65px;
-    background-color: rgba(197, 183, 113, 0.986);
+    width: 34px;
+    height: 66px;
+    background-color: rgb(206 195 138 / 99%);
+
     border: 0;
     border-radius: 20px;
     z-index: 1;
+    border: 1px solid wheat; 
   }
 
   .btn_icon {
     fill: white;
     position: absolute;
-
+top: 30px;
     left: 1px;
 
     width: 20px;
     height: 20px;
     padding: 3px;
     border-radius: 50%;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid wheat;
   }
   .btn_iconNight {
     fill: rgb(66, 48, 15);
@@ -41,7 +43,7 @@
     height: 20px;
     padding: 3px;
     border-radius: 50%;
-    border: 2px solid rgb(66, 48, 15);
+    border: 2px solid wheat;
   }
 }
 
@@ -54,7 +56,7 @@
     left: 75px;
 
     width: 33px;
-    height: 65px;
+    height: 63px;
     background: url('../../images/1.jpg');
     border: 0;
     border-radius: 20px;
@@ -63,7 +65,7 @@
   .btn_icon {
     fill: white;
     position: absolute;
-
+    
     left: 1px;
     transform: rotate(90deg);
     width: 20px;
@@ -76,7 +78,7 @@
   .btn_iconNight {
     fill: rgb(66, 48, 15);
     position: absolute;
-    
+   
     left: 1px;
 
     width: 20px;

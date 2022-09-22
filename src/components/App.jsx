@@ -34,7 +34,7 @@ export const App = () => {
     },
     {
       component: <About />,
-      title: 'ABOUT_ME',
+      title: 'ABOUT ME',
       pageNumber: 2,
       className: NightTheme
         ? `${style.about} ${style.NightTheme}`
@@ -79,7 +79,7 @@ export const App = () => {
                 transition={{
                   default: { ease: 'linear' },
                 }}
-                animate={{ width: isActive === pageNumber ? 1100 : 100 }}
+                animate={{ width: isActive === pageNumber ? "55vw" : "5vw" }}
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
