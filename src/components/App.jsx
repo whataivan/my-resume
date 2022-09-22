@@ -72,7 +72,7 @@ export const App = () => {
         <ThemeSwitcher />
         {componentsInfo.map(
           ({ component, title, pageNumber, classNameActive, className }) => {
-            console.log();
+          
             return (
               <motion.div
                 key={pageNumber}

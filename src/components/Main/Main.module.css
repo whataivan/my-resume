@@ -154,7 +154,7 @@
     justify-content: flex-start;
   }
   .me_img {
-    width: 250px;
+    width: 13vw;
     border-radius: 50%;
     box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
       inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
@@ -171,8 +171,9 @@
     flex-direction: row;
   }
   .front_side{
-    
-    width: 1100px;
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
    align-items: center;
     backdrop-filter: blur(70px);
@@ -196,7 +197,7 @@
     font-size: 17px;
     color: rgb(96, 88, 74);
     margin-top: 50px;
-    width: 600px;
+    width: 28vw;
     line-height: 25px;
     font-weight: 600;
     letter-spacing: 0.02em;
