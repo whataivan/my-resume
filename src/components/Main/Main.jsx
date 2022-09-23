@@ -10,7 +10,7 @@ export const Main = () => {
   return (
     
 
-    <div className={style.main}>
+    
       
       <div className={style.group}>
         <div className={style.front_side}>
@@ -48,7 +48,7 @@ export const Main = () => {
         </ul>
         
       </div>
-    </div>
+    
     // </CSSTransition>
     // </SwitchTransition>
   );
