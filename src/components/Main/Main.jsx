@@ -12,7 +12,7 @@ export const Main = () => {
 
     
       
-      <div className={style.group}>
+      <div className={style.container}>
         <div className={style.front_side}>
         <img className={style.me_img} src={me} width="200" alt="Me" />
         <div><h3 className={style.title}>Hello, my name is Ivan Pikun.</h3>

@@ -100,7 +100,7 @@ margin-top: 21px;
 @media (min-width: 1200px) {
   .container {
     margin-top: 45px;
-    margin-left: 153px;
+    margin-left: 85px;
   }
   .line {
     background-color: wheat;
@@ -112,8 +112,10 @@ margin-top: 21px;
     margin-right: 25px;
     display: flex;
     padding: 0;
+    margin-bottom: 20px;
   }
   .timeLine_listBottom {
+    margin-top: 20px;
     display: flex;
     padding: 0;
     margin-left: 80px;
@@ -126,15 +128,15 @@ margin-top: 21px;
     border-radius: 15px;
     backdrop-filter: blur(50px);
     margin-right: 25px;
-    border-bottom: 0.5px solid wheat;
+    border-bottom: 1px solid wheat;
   }
   .timeLine_item::after {
     content: '';
     position: absolute;
     width: 3px;
-    height: 16px;
+    height: 20px;
     background-color: wheat;
-    top: 53px;
+    top: 48px;
     left: 49.5%;
   }
   .timeLine_item::before {
@@ -160,15 +162,15 @@ margin-top: 21px;
     backdrop-filter: blur(50px);
     margin-right: 25px;
 
-    border-top: 0.5px solid wheat;
+    border-top: 1px solid wheat;
   }
   .timeLine_itemBottom::before {
     content: '';
     position: absolute;
     width: 3px;
-    height: 16px;
+    height: 20px;
     background-color: wheat;
-    bottom: 53px;
+    bottom: 48px;
     left: 50%;
   }
   .timeLine_itemBottom::after {

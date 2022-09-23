@@ -212,12 +212,14 @@
 /* DESKPOT----------------------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .disabled {
+    font-family: sans-serif;
     text-align: center;
     width: 400px;
     background-size: cover;
     color: #fff;
     transform: rotate(-90deg);
     font-size: 30px;
+    font-weight: 700;
     letter-spacing: 0.12em;
     transition: all 300ms ease;
     flex-shrink: 0;

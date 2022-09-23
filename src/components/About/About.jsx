@@ -55,7 +55,7 @@ export const About = () => {
               <Slider {...settings} className={style.slider}>
                 {img.map(e => {
                   return (
-                    <div key={e}>
+                    <div  key={e}>
                       <img className={style.topSide_image} src={e} alt={e} />
                     </div>
                   );

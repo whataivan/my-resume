@@ -5,17 +5,20 @@
   border-radius: 10px;
   justify-content: center;
   align-items: flex-start;
-  /* backdrop-filter: blur(5px); */
+ 
 }
 
 .title {
   padding: 15px;
-  color: rgb(18, 30, 63);
+  color: wheat;
   height: 15px;
   margin: 0;
-  margin-left: 100px;
-  /* backdrop-filter: blur(30px); */
+  margin-left: 110px;
+  font-size: 18px;
+  font-weight: 700;
   border-radius: 15px;
+
+ 
 }
 .list_wrap {
   padding: 20px;
@@ -40,7 +43,7 @@
   border-top: 0.5px solid rgb(246, 241, 232);
   cursor: pointer;
   background-color: rgb(18, 30, 63);
-  /* background: url('hhttps://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg'); */
+
   margin-top: 7px;
   display: flex;
   border-radius: 15px;
@@ -53,6 +56,7 @@
 }
 .text {
   margin: 0;
+  font-size: 13px;
 }
 
 /* TABLET----------------------------------------------------------------------------------------- */
@@ -92,12 +96,12 @@
     border-radius: 15px;
 
     backdrop-filter: blur(60px);
-    border-bottom: 0.5px solid wheat;
-    border-top: 0.5px solid wheat;
+    border-bottom: 1px solid wheat;
+    border-top: 1px solid wheat;
   }
   .item {
-    border-bottom: 0.5px solid rgb(245, 239, 230);
-    border-top: 0.5px solid rgb(246, 241, 232);
+    border-bottom: 1px solid rgb(245, 239, 230);
+    border-top: 1px solid rgb(246, 241, 232);
     cursor: pointer;
     background-color: rgb(18, 30, 63);
 

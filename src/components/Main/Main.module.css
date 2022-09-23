@@ -1,8 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .main {
-    
-    
-  }
+ 
   .me_img {
     display: none;
     margin-top: 6vh;
@@ -13,7 +10,7 @@
     opacity: 1.5;
     
   }
-  .group {
+  .container {
     margin-top: 75px;
     color: aliceblue;
     font-family: 'Roboto';
@@ -40,7 +37,7 @@
     
     border-bottom: 2px solid wheat;
     border-top: 2px solid wheat;
-    backdrop-filter: blur(50px);
+    
   }
   .title {
   
@@ -139,9 +136,9 @@
 /* TBLET----------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main {
+  .container  {
     color: aliceblue;
-    font-family: 'Roboto';
+    font-family: 'Roboto' ;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -149,10 +146,10 @@
     line-height: 14px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 80px;
   }
   .me_img {
     margin-top: 6vh;
@@ -163,11 +160,7 @@
     opacity: 1.5;
     
   }
-  .group {
-
-    margin-top: 80px;
-    
-  }
+  
   .front_side{
     
     
@@ -178,7 +171,7 @@
     
     border-bottom: 2px solid wheat;
     border-top: 2px solid wheat;
-    backdrop-filter: blur(50px);
+  
   }
   .title {
     margin-top: 25px;
@@ -279,7 +272,7 @@
 
 /* DESKPOT----------------------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
-  .main {
+  .container {
     color: aliceblue;
     font-family: 'Roboto';
     font-style: normal;
@@ -289,9 +282,12 @@
     line-height: 14px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 110px;
+    
   }
   .me_img {
     width: 13vw;
@@ -299,26 +295,20 @@
     box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
       inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
     opacity: 1.5;
-    /* border: 1px solid rgb(219, 210, 210); */
-    /* margin-top: 150px; */
+    
     margin-left: 100px;
     margin-right: 50px;
   }
-  .group {
-    /* transform: all 1s linear; */
   
-    margin-top: 110px;
-    flex-direction: row;
-  }
   .front_side{
     width: 55vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
    align-items: center;
-    backdrop-filter: blur(70px);
+  backdrop-filter: blur(50px);
     padding: 10px 25px;
-   
+   height: 30vh;
     border-bottom: 0.5px solid wheat;
     border-top: 0.5px solid wheat;
   }
@@ -329,18 +319,25 @@
   }
   
   .subtitle {
+    width: 15vw;
     color: rgb(96, 88, 74);
-    margin-top: 30px;
+    margin-top: 45px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-right: auto;
+    margin-left: auto;
     
   }
   .text {
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(96, 88, 74);
-    margin-top: 50px;
+    margin-top: 40px;
     width: 28vw;
     line-height: 25px;
     font-weight: 600;
     letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .socials_list {
@@ -348,8 +345,7 @@
     margin-bottom: 0;
     display: flex;
     margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
+  
     align-items: center;
     justify-content: space-between;
     width: 280px;

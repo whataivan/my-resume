@@ -57,6 +57,7 @@
 /* DESKPOT----------------------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .backdrop {
+    
     transition: background-image 1s linear;
     display: flex;
     position: relative;

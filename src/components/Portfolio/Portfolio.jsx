@@ -15,7 +15,7 @@ export const Portfolio = () => {
     {
       title: 'Filmoteka',
       src: filmoteka,
-      used: '[HTML, CSS, JavaScript, SASS, Axios]',
+      used: '[HTML, CSS, JS, SASS, Axios]',
       position: 'Position: Team-leader.',
       textList: [
         'Developed reviews section, header and work with local storage.',
@@ -25,7 +25,7 @@ export const Portfolio = () => {
     {
       title: 'Kapusta',
       src: kapusta,
-      used: '[React, Redux toolkit, Formik, Axios]',
+      used: '[React, Redux, Formik, Axios]',
       position: 'Position: Developer.',
       textList: [
         'Work with api, create async thunk and custom select.',
@@ -35,14 +35,14 @@ export const Portfolio = () => {
     {
       title: 'Img finder',
       src: finder,
-      used: '[HTML, CSS, JavaScript, React, Axios]',
+      used: '[HTML, CSS, JS, React, Axios]',
       position: 'Position: Developer.',
       textList: ['Simple web-app with open API for searching images.'],
     },
     {
       title: 'Hellenglish',
       src: helleng,
-      used: '[HTML, CSS, SASS, BEM, Java Script]',
+      used: '[HTML, CSS, SASS, BEM, JS]',
       position: 'Position: Developer.',
       textList: ['Developed guarantee and feedback section.'],
     },
