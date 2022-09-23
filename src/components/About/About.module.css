@@ -1,10 +1,5 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
   
     display: flex;
@@ -16,7 +11,7 @@
     width: 60vw;
     margin-top: 7vh;
     display: flex;
-    
+    margin-left: 35px;
     justify-content: flex-start;
   }
   .topSide_item {
@@ -37,7 +32,7 @@
     font-size: 35px;
     font-weight: normal;
     position: absolute;
-    top: 35px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
@@ -86,43 +81,43 @@
     margin: 0;
     font-size: 14px;
     font-weight: 700;
-    
+    margin-bottom: 5px;
   }
   .topSide_text{
    color: wheat;
    padding: 0 20px  ;
    line-height: 120%;
+   letter-spacing: 0.03em;
   }
-  
-
 }
-@media (min-width: 1200px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
   
     display: flex;
     padding: 25px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+   
+   
   }
   .topSide_list {
-    margin-top: 30px;
+    width: 60vw;
+    margin-top: 7vh;
     display: flex;
-    margin-left: 85px;
-    margin-right: auto;
+    margin-left: 35px;
     justify-content: flex-start;
   }
   .topSide_item {
     position: relative;
-    margin-right: 30px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: transparent;
     border-radius: 25px;
-    width: 330px;
-    height: 410px;
-    /* backdrop-filter: blur(50px); */
+    width: 38vw;
+    height: 45vh;
+   
     border-bottom: 0.5px solid wheat;
     
   }
@@ -130,7 +125,7 @@
     font-size: 35px;
     font-weight: normal;
     position: absolute;
-    top: 35px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
@@ -179,14 +174,18 @@
     margin: 0;
     font-size: 14px;
     font-weight: 700;
-    
+    margin-bottom: 5px;
   }
   .topSide_text{
    color: wheat;
-   padding: 0 15px  ;
+   padding: 0 20px  ;
    line-height: 120%;
+   letter-spacing: 0.03em;
   }
+  
+
 }
+
 /* DESKPOT----------------------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .container {
@@ -271,6 +270,7 @@
     margin: 0;
     font-size: 14px;
     font-weight: 700;
+    margin-bottom: 5px;
     
   }
   .topSide_text{

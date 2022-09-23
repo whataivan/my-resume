@@ -171,7 +171,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     height: 85vh;
   }
@@ -181,27 +181,26 @@
     width: 85vw;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    
     margin-right: auto;
     margin-left: auto;
-    padding: 0;
+    
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 15px;
+    
    
   }
 
   .list_item {
     display: flex;
 
-    /* background: url('../../images/bg.JPG'); */
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    width: 250px;
-    height: 200px;
+    width: 35vw;
+    height: 18vh;
     margin-right: 70px;
     margin-bottom: 13px;
   }
@@ -212,8 +211,8 @@
     margin-right: 0;
   }
   .group {
-    width: 100%;
-   
+    width: 35vw;
+    height: 10vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -221,16 +220,18 @@
     padding: 20px;
     background: url('../../images/bg.JPG');
     background-size: cover;
+    padding-right: 10px;
   }
   .group_active {
-    width: 100%;
-    
+    width: 35vw;
+    height: 10vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: url('../../images/bg.JPG');
+    padding-right: 10px;
     border-bottom: 2px solid white;
     background-size: cover;
   }
@@ -257,12 +258,13 @@
     content: '•';
     padding-right: 7px;
     top: 0;
-    left: -15px;
+    left: 10px;
   }
   .text {
-    margin: 5px 20px 0 0px;
+    margin: 5px 20px  0px 25px;
     color: white;
     font-size: 13px;
+    line-height: 120%;
   }
   .orange_text {
     font-size: 13px;
@@ -278,7 +280,7 @@
   }
 
   .main_img {
-    width: 610px;
+    width: 81vw;
     height: 280px;
     margin-bottom: 17px;
     

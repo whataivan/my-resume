@@ -28,14 +28,15 @@
     backdrop-filter: blur(50px);
     margin-right: 25px;
     border-bottom: 0.5px solid wheat;
+    margin-bottom: 21px;
   }
   .timeLine_item::after {
     content: '';
     position: absolute;
     width: 3px;
-    height: 16px;
+    height: 18px;
     background-color: wheat;
-    top: 53px;
+    top: 48px;
     left: 34.5%;
   }
   .timeLine_item::before {
@@ -60,16 +61,16 @@ width: 20vw;
     border-radius: 15px;
     backdrop-filter: blur(50px);
     margin-right: 25px;
-
+margin-top: 21px;
     border-top: 0.5px solid wheat;
   }
   .timeLine_itemBottom::before {
     content: '';
     position: absolute;
     width: 3px;
-    height: 16px;
+    height: 18px;
     background-color: wheat;
-    bottom: 53px;
+    bottom: 48px;
     left: 65%;
   }
   .timeLine_itemBottom::after {

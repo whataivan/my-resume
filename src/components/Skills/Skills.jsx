@@ -4,14 +4,15 @@ import { Reorder } from 'framer-motion';
 import { useState } from 'react';
 export const Skills = () => {
   const [techSkills, setTechSkills] = useState([
-    'HTML, CSS',
-    'SASS',
+    'HTML, CSS, SASS',
+    
     'JavaScript',
+    'Reast Api',
     'React',
-    'ReduxToolKit',
-    'Material Ui',
+    'Redux, ReduxToolKit, Redux Thunk',
+    'Material Ui, Bootstrap',
     'Next JS',
-    'Styled-components',
+    'Styled-components, CSS modules',
     'Axios',
     'Intersection Observer',
     'Transition Group',

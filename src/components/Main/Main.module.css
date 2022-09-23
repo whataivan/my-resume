@@ -18,7 +18,7 @@
     
   }
   .me_img {
-    margin-top: 10vh;
+    margin-top: 6vh;
     width: 33vw;
     border-radius: 50%;
     box-shadow: inset rgba(15, 15, 15, 0.6) 0 -3px 8px,
@@ -37,13 +37,14 @@
     display: flex;
    align-items: center;
    
-    padding: 10px 30px;
+    padding:  30px;
     
     border-bottom: 1px solid wheat;
     border-top: 1px solid wheat;
-    backdrop-filter: blur(300px);
+    backdrop-filter: blur(50px);
   }
   .title {
+    margin-top: 25px;
     margin-left: -110px;
     color: rgb(96, 88, 74);
     font-size: 32px;
@@ -51,6 +52,7 @@
   }
   
   .subtitle {
+    margin-top: 35px;
     color: rgb(96, 88, 74);
     width: 30vw;
     
@@ -58,9 +60,9 @@
   }
   .text {
     color: rgb(96, 88, 74);
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-left: 35px;
-   width: 57vw;
+   width: 55vw;
    height: 25vh;
     line-height: 25px;
     letter-spacing: 0.02em;
