@@ -243,7 +243,7 @@
   .mainActive {
     margin-right: 30px;
 
-    height: 720px;
+    /* height: 85vh; */
     background: url('../images/1.jpg');
     border-radius: 50px;
     background-size: cover;
