@@ -301,14 +301,14 @@
   }
   
   .front_side{
-    width: 55vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
    align-items: center;
   backdrop-filter: blur(50px);
     padding: 10px 25px;
-   height: 30vh;
+   height: 350px;
     border-bottom: 0.5px solid wheat;
     border-top: 0.5px solid wheat;
   }

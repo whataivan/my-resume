@@ -79,7 +79,7 @@ export const App = () => {
                 transition={{
                   default: { ease: 'linear' },
                 }}
-                animate={{ width: isActive === pageNumber ? "55vw" : "5vw" }}
+                animate={{ width: isActive === pageNumber ? "70vw" : "5vw" }}
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
