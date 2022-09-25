@@ -15,8 +15,8 @@ export const ThemeSwitcher = () => {
     >
       <motion.svg
         key={theme}
-        initial={{ opacity: 0.3, y: !theme ? -30 : 0 }}
-        animate={{ y: theme ? -30 : 0, opacity: 0.5 }}
+        initial={{ opacity: 0.5, y: !theme ? -30 : 0 }}
+        animate={{ y: theme ? -30 : 0, opacity: 0.7 }}
         exit={{ y: 0 }}
         transition={{ duration: 0.7 }}
         className={theme ? style.btn_icon : style.btn_iconNight}

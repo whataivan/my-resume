@@ -51,7 +51,7 @@ export const About = () => {
           
 
           {educationAndWork.map(({ title, text, range, img, subtitle, id }) => (
-            <motion.li className={style.topSide_item} key={id} whileHover={{y: "-2px"}} initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
+            <motion.li className={style.topSide_item} key={id}  initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
               <Slider {...settings} className={style.slider}>
                 {img.map(e => {
                   return (

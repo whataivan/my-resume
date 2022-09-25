@@ -77,15 +77,15 @@ export const App = () => {
               <motion.div
                 key={pageNumber}
                 transition={{
-                 
-                  duration:0.5
+                  
+                  duration:0.3
                 }}
                 animate={{ width: isActive === pageNumber ? "70vw" : "5vw", height: isActive === pageNumber ? '85vh' : "75vh" }}
                 
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
-                onClick={() => dispatch(setActive(pageNumber))}
+                onClick={(e) => e.target===e.currentTarget&&  dispatch(setActive(pageNumber))}
               >
                 {pageNumber===1&&<ThemeSwitcher />}
                 {isActive === pageNumber ? (
@@ -98,7 +98,7 @@ export const App = () => {
                     {component}
                   </motion.div>
                 ) : (
-                  <h2 className={style.disabled}>{title}</h2>
+                  <h2 onClick={(e) => e.target===e.currentTarget&&  dispatch(setActive(pageNumber))} className={style.disabled}>{title}</h2>
                 )}
               </motion.div>
             );

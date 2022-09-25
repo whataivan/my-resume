@@ -221,7 +221,7 @@
     font-size: 35px;
     font-weight: normal;
     position: absolute;
-    top: 35px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
@@ -277,6 +277,7 @@
    color: wheat;
    padding: 0 15px  ;
    line-height: 120%;
+   
   }
   
 }

@@ -276,7 +276,7 @@
 
   .portfolio {
     display: flex;
-    height: 720px;
+    
     align-items: center;
     justify-content: center;
     margin-left: 30px;
@@ -289,8 +289,8 @@
   .portfolioActive {
     /* opacity: 0.7; */
     margin-left: 30px;
-    width: 65vw;
-    height: 720px;
+    
+    
     background: url('../images/3.jpg');
     border-radius: 50px;
     background-size: cover;
@@ -312,9 +312,10 @@
     margin-left: 30px;
     width: 65vw;
     height: 720px;
-    background: url('../images/4.jpg');
+    background: url('https://cdn.pixabay.com/photo/2017/02/13/21/57/lake-2063957_960_720.jpg');
     border-radius: 50px;
     background-size: cover;
+    
     overflow: hidden;
   }
   .NightTheme {

@@ -56,6 +56,7 @@
     background: url('../../images/bg.JPG');
     background-size: cover;
     padding-right: 10px;
+    border-radius: 15px;
   }
   .group_active {
     width: 35vw;
@@ -64,6 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 15px;
     padding: 20px;
     background: url('../../images/bg.JPG');
     padding-right: 10px;
@@ -91,12 +93,12 @@
     position: absolute;
     color: white;
     content: '•';
-    padding-right: 7px;
+    
     top: 0;
-    left: 10px;
+    left: 15px;
   }
   .text {
-    margin: 5px 20px  0px 25px;
+    margin: 5px 20px  0px 30px;
     color: white;
     font-size: 13px;
     line-height: 120%;
@@ -104,11 +106,12 @@
   .orange_text {
     font-size: 13px;
     margin: 5px 0px 0 0px;
-
+text-align: center;
     color: orange;
     ;
   }
   .used_text {
+    text-align: center;
     font-size: 14px;
     margin: 5px 8px 0 8px;
     color: blanchedalmond;
