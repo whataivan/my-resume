@@ -233,21 +233,21 @@
     
 
     height: 720px;
-    overflow: hidden;
-    margin-right: 30px;
+    
+    margin-left: 30px;
     border-radius: 50px;
     background: url('../images/1.jpg');
     background-size: cover;
   }
 
   .mainActive {
-    margin-right: 30px;
-
-    /* height: 85vh; */
+    margin-left: 30px;
+    position: relative;
+    
     background: url('../images/1.jpg');
     border-radius: 50px;
     background-size: cover;
-    overflow: hidden;
+    
   }
 
   .about {
@@ -256,7 +256,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 50px;
     background-size: cover;
     background: url('../images/2bg.JPG');
@@ -265,7 +265,7 @@
 
   .aboutActive {
     display: block;
-    margin-right: 30px;
+    margin-left: 30px;
     width: 65vw;
     height: 720px;
     background: url('../images/2.jpg');
@@ -279,7 +279,7 @@
     height: 720px;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 50px;
     background-size: cover;
     background: url('../images/3.jpg');
@@ -288,7 +288,7 @@
 
   .portfolioActive {
     /* opacity: 0.7; */
-    margin-right: 30px;
+    margin-left: 30px;
     width: 65vw;
     height: 720px;
     background: url('../images/3.jpg');
@@ -302,14 +302,14 @@
     height: 720px;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 50px;
     background-size: cover;
     background: url('../images/4.jpg');
     overflow: hidden;
   }
   .skillsActive {
-    margin-right: 30px;
+    margin-left: 30px;
     width: 65vw;
     height: 720px;
     background: url('../images/4.jpg');

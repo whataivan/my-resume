@@ -69,7 +69,7 @@ export const App = () => {
   if (screenWidth >= 1200) {
     return (
       <MainContainer>
-        <ThemeSwitcher />
+        
         {componentsInfo.map(
           ({ component, title, pageNumber, classNameActive, className }) => {
           
@@ -77,14 +77,17 @@ export const App = () => {
               <motion.div
                 key={pageNumber}
                 transition={{
-                  default: { ease: 'linear' },
+                 
+                  duration:0.5
                 }}
                 animate={{ width: isActive === pageNumber ? "70vw" : "5vw", height: isActive === pageNumber ? '85vh' : "75vh" }}
+                
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
                 onClick={() => dispatch(setActive(pageNumber))}
               >
+                {pageNumber===1&&<ThemeSwitcher />}
                 {isActive === pageNumber ? (
                   <motion.div
                     initial={{ opacity: 0 }}

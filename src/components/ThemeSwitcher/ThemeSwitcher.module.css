@@ -93,13 +93,14 @@ top: 30px;
   .btn_backdrop {
     position: absolute;
     top: 45%;
-    left: 75px;
+    left:  -50px;
 
     width: 33px;
     height: 63px;
     background: url('../../images/1.jpg');
     border: 0;
     border-radius: 20px;
+    z-index: 15;
   }
 
   .btn_icon {

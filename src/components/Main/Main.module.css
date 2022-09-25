@@ -299,15 +299,14 @@
   }
   
   .front_side{
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    
     margin-top: 50px;
     display: flex;
    align-items: center;
    justify-content: center;
   backdrop-filter: blur(100px);
-    padding: 10px 25px;
+    padding: 10px 0;
    height: 350px;
     border-bottom: 0.5px solid wheat;
     border-top: 0.5px solid wheat;
