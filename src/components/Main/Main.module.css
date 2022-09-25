@@ -345,8 +345,7 @@
     padding: 0;
     margin-bottom: 0;
     display: flex;
-    margin-top: 45px;
-  
+
     align-items: center;
     justify-content: space-between;
     width: 280px;
@@ -381,7 +380,7 @@
   .btn {
       color: wheat;
       backdrop-filter: blur(18px);
-      margin-top: 70px;
+      
     margin-left: auto;
     margin-right: auto;
     
