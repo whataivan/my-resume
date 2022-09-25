@@ -284,9 +284,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    
-    margin-top: 110px;
+    justify-content: space-evenly;
+    height: 80vh;
     
   }
   .me_img {
@@ -331,6 +330,7 @@
   .text {
     font-size: 16px;
     color: rgb(96, 88, 74);
+    color:rgb(55 53 49);
     margin-top: 40px;
     width: 28vw;
     line-height: 25px;
