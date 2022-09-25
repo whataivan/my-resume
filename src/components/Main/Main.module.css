@@ -290,13 +290,12 @@
     
   }
   .me_img {
-    width: 13vw;
+    width: 250px;
     border-radius: 50%;
     box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
       inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
-    opacity: 1.5;
     
-    margin-left: 100px;
+    
     margin-right: 50px;
   }
   
@@ -306,7 +305,8 @@
     margin-right: auto;
     display: flex;
    align-items: center;
-  backdrop-filter: blur(50px);
+   justify-content: center;
+  backdrop-filter: blur(150px);
     padding: 10px 25px;
    height: 350px;
     border-bottom: 0.5px solid wheat;

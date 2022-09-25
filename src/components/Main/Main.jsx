@@ -49,7 +49,6 @@ export const Main = () => {
         
       </div>
     
-    // </CSSTransition>
-    // </SwitchTransition>
+    
   );
 };
