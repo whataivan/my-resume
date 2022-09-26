@@ -120,7 +120,7 @@ export const App = () => {
                   default: { ease: 'linear' },
                 }}
                 animate={{
-                  height: isActive === pageNumber ? '85vh' : '5vh',
+                  height: isActive === pageNumber ? '83vh' : '5vh',
                   
                 }}
                 className={
