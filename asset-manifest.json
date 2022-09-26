@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.24121ff7.css",
+    "main.css": "/my-resume/static/css/main.c511485d.css",
     "main.js": "/my-resume/static/js/main.e88d9207.js",
     "static/media/kpi3.jpg": "/my-resume/static/media/kpi3.b06a2fb50d99244c5bea.jpg",
     "static/media/me.png": "/my-resume/static/media/me.67ede7d166fdac31a446.png",
     "static/media/Ivan_Pikun_junior_react.pdf": "/my-resume/static/media/Ivan_Pikun_junior_react.3feae5dabb7b4df48d85.pdf",
     "static/media/3.jpg": "/my-resume/static/media/3.9bf2ceac5b99f8997196.jpg",
     "static/media/kpi1.jpg": "/my-resume/static/media/kpi1.3eaa10efe3b4f6334b35.jpg",
-    "static/media/4.jpg": "/my-resume/static/media/4.4013973613d04909ed1a.jpg",
+    "static/media/4.jpg": "/my-resume/static/media/4.7fa802eed91c448f9193.jpg",
     "static/media/2bg.JPG": "/my-resume/static/media/2bg.9b159d1f0979ae170e10.JPG",
     "static/media/1.jpg": "/my-resume/static/media/1.40b517ef5030125925d4.jpg",
     "static/media/finder.jpg": "/my-resume/static/media/finder.67e33b166fd15e75fab3.jpg",
@@ -26,11 +26,11 @@
     "static/media/slick.ttf": "/my-resume/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/my-resume/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-resume/index.html",
-    "main.24121ff7.css.map": "/my-resume/static/css/main.24121ff7.css.map",
+    "main.c511485d.css.map": "/my-resume/static/css/main.c511485d.css.map",
     "main.e88d9207.js.map": "/my-resume/static/js/main.e88d9207.js.map"
   },
   "entrypoints": [
-    "static/css/main.24121ff7.css",
+    "static/css/main.c511485d.css",
     "static/js/main.e88d9207.js"
   ]
 }
