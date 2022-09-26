@@ -1,3 +1,9 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container{
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     margin-top: 4vh;

@@ -31,7 +31,8 @@
     
     
     display: flex;
-   
+   align-items: center;
+   justify-content: center;
    
     padding:  30px;
     
@@ -40,11 +41,14 @@
     
   }
   .title {
-  
+  margin: 0;
     width: 85vw;
     color: rgb(55, 51, 44);
     font-size: 20px;
     font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     
   }
   
@@ -52,9 +56,10 @@
    
     margin-top: 20px;
     color: rgb(8, 8, 8);
-   width: 60vw;
+   width: 65vw;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     
   }
   .text {
@@ -103,8 +108,8 @@
    
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
-  height: 6vh;
+    width: 78vw;
+  height: 7vh;
     border: 2px solid wheat;
     border-radius: 50px;
     backdrop-filter: blur(100px);
@@ -115,7 +120,7 @@
   
     width: 50px;
     height: 50px;
-    padding: 10px;
+    padding: 20px;
    
     border-radius: 50%;
   

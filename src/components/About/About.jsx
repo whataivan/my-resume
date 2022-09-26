@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 import { HobbiesList } from 'components/HobbiesList/HobbiesList';
 //========================================
 export const About = () => {
+  const screenWidth= window.screen.width
   const educationAndWork = [
     {
       title: 'Education',
@@ -46,21 +47,22 @@ export const About = () => {
   return (
     <div className={style.container}>
       <HobbiesList />
-      <div>
+      <div className={style.rightSideWrap}>
         <ul className={style.topSide_list}>
           
 
           {educationAndWork.map(({ title, text, range, img, subtitle, id }) => (
-            <motion.li className={style.topSide_item} key={id}  initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(100px)"}} transition={{duration: 1}} >
-              <Slider {...settings} className={style.slider}>
+            <motion.li className={style.topSide_item} key={id}  initial={{backdropFilter: "blur(0px)"}} animate={{backdropFilter: "blur(50px)"}} transition={{duration: 1}} >
+              {screenWidth>=1200&&<Slider {...settings} className={style.slider}>
                 {img.map(e => {
                   return (
+                    
                     <div  key={e}>
                       <img className={style.topSide_image} src={e} alt={e} />
                     </div>
                   );
                 })}
-              </Slider>
+              </Slider>}
 
               <h3 className={style.topSide_title}>{title}</h3>
 
