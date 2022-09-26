@@ -52,7 +52,7 @@ export const Portfolio = () => {
     switch (isActive) {
       case kapusta:
         result = [
-          'https://github.com/Mr-Nihility/kapusta-project.git',
+          'https://github.com/Jasper935/kapusta-project',
           'https://kapusta-project-app.netlify.app/',
         ];
         break;
