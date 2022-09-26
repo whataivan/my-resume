@@ -59,7 +59,7 @@
   .topSide_subtitle{
     position: relative;
     margin: 0;
-    margin: 22px 0px 17px 0px;
+    margin: 22px 0px 17px 5px;
     color: white;
     font-size: 15px;
     
@@ -82,7 +82,7 @@
   .topSide_range{
     color: white;
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 5px;
   }
@@ -91,7 +91,7 @@
    padding: 0 20px  ;
    line-height: 120%;
    letter-spacing: 0.03em;
-   font-size: 12px;
+   font-size: 10px;
   }
 }
 

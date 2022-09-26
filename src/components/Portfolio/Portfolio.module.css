@@ -91,9 +91,10 @@
     content: '•';
     
     top: 0;
-    left: 15px;
+    left: 0px;
   }
   .text {
+    margin-left: 5px;
     /* margin: 5px 20px  0px 30px; */
     padding: 2px 5px 0 7px;
     color: white;
