@@ -126,7 +126,7 @@ export const App = () => {
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
-                onClick={(e) =>{ console.log(e.target===e.currentTarget); e.target===e.currentTarget&&  dispatch(setActive(pageNumber))}}
+                onClick={(e) =>{  e.target===e.currentTarget&&  dispatch(setActive(pageNumber))}}
               >
                 {isActive === pageNumber ? (
                   <motion.div

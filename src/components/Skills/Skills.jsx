@@ -52,6 +52,7 @@ export const Skills = () => {
           as="ul"
           values={techSkills}
           onReorder={setTechSkills}
+          
         >
           {techSkills.map((el, i) => {
             return (
@@ -60,6 +61,7 @@ export const Skills = () => {
                 whileDrag={{ scale: 1.07 }}
                 value={el}
                 key={el}
+                
               >
                 <p className={style.text}>{el}</p>
               </Reorder.Item>
