@@ -126,7 +126,7 @@ export const App = () => {
                 className={
                   isActive === pageNumber ? classNameActive : className
                 }
-                onClick={(e) => e.target===e.currentTarget&&  dispatch(setActive(pageNumber))}
+                onClick={(e) =>{ console.log(e.target===e.currentTarget); e.target===e.currentTarget&&  dispatch(setActive(pageNumber))}}
               >
                 {isActive === pageNumber ? (
                   <motion.div
@@ -138,7 +138,7 @@ export const App = () => {
                     {component}
                   </motion.div>
                 ) : (
-                  <h2 className={style.disabled}>{title}</h2>
+                  <h2 onClick={(e) => e.target===e.currentTarget&&  dispatch(setActive(pageNumber))} className={style.disabled}>{title}</h2>
                 )}
               </motion.div>
             );
