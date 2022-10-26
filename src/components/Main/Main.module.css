@@ -13,7 +13,7 @@
   .container {
     margin-top: 75px;
     color: aliceblue;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -143,7 +143,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container  {
     color: aliceblue;
-    font-family: 'Roboto' ;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -279,7 +279,7 @@
 @media (min-width: 1200px) {
   .container {
     color: aliceblue;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -317,7 +317,7 @@
     border-top: 0.5px solid wheat;
   }
   .title {
-    color: rgb(96, 88, 74);
+    color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: 600;
     margin-top: 25px;
@@ -325,7 +325,7 @@
   
   .subtitle {
     width: 15vw;
-    color: rgb(96, 88, 74);
+    color: wheat;
     margin-top: 45px;
     font-size: 22px;
     font-weight: 300;
@@ -335,8 +335,7 @@
   }
   .text {
     font-size: 16px;
-    color: rgb(96, 88, 74);
-    color:rgb(55 53 49);
+    color: wheat;
     margin-top: 40px;
     width: 28vw;
     line-height: 25px;

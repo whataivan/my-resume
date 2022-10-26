@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Raleway';
   }
 
   .title {
@@ -65,7 +66,7 @@ margin-bottom: 10px;
   .container {
     padding: 15px;
     display: flex;
-
+    font-family: 'Raleway';
     justify-content: center;
     align-items: center;
   }
@@ -127,7 +128,7 @@ margin-bottom: 10px;
 @media (min-width: 1200px) {
   .container {
     padding: 0 15px;
-    
+    font-family: 'Raleway';
     display: flex;
     height: 85vh;
     justify-content: center;

@@ -246,7 +246,7 @@
     position: relative;
     
     background: url('../images/1.jpg');
-    background: linear-gradient(to right, #7c7ba9, rgb(184, 201, 129));
+    background: linear-gradient(to right, #5f5db4, rgb(188 96 139));
     border-radius: 50px;
     background-size: cover;
     
