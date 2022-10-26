@@ -237,6 +237,7 @@
     margin-left: 30px;
     border-radius: 50px;
     background: url('../images/1.jpg');
+    /* background: linear-gradient(to right, black, rgb(70, 132, 87)); */
     background-size: cover;
   }
 
@@ -245,6 +246,7 @@
     position: relative;
     
     background: url('../images/1.jpg');
+    background: linear-gradient(to right, #7c7ba9, rgb(184, 201, 129));
     border-radius: 50px;
     background-size: cover;
     
@@ -259,7 +261,8 @@
     margin-left: 30px;
     border-radius: 50px;
     background-size: cover;
-    background: url('../images/2bg.JPG');
+    background: linear-gradient(to top, #8e5f5f, rgb(70, 132, 87));
+    /* background: url('../images/2.jpg'); */
     overflow: hidden;
   }
 
@@ -268,7 +271,8 @@
     margin-left: 30px;
     width: 65vw;
     height: 720px;
-    background: url('../images/2.jpg');
+    /* background: url('../images/2.jpg'); */
+    background: linear-gradient(to right, #8e5f5f, rgb(70, 132, 87));
     border-radius: 50px;
     background-size: cover;
     overflow: hidden;
@@ -283,6 +287,7 @@
     border-radius: 50px;
     background-size: cover;
     background: url('../images/3.jpg');
+    background: linear-gradient(to top, #31a17c, rgb(37, 48, 166));
     overflow: hidden;
   }
 
@@ -292,6 +297,7 @@
     
     
     background: url('../images/3.jpg');
+    background: linear-gradient(to right, #31a17c, rgb(37, 48, 166));
     border-radius: 50px;
     background-size: cover;
     overflow: hidden;
@@ -305,14 +311,16 @@
     margin-left: 30px;
     border-radius: 50px;
     background-size: cover;
-    background: url('../images/4.jpg');
+    
+    background: linear-gradient(to top, #113276, rgb(166, 95, 37));
     overflow: hidden;
   }
   .skillsActive {
     margin-left: 30px;
     width: 65vw;
     height: 720px;
-    background: url('../images/4.jpg');
+    
+    background: linear-gradient(to right, #113276, rgb(166, 95, 37));
     border-radius: 50px;
     background-size: cover;
     

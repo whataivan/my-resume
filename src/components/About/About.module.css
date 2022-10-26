@@ -29,8 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: transparent;
-    backdrop-filter: blur(50px);
+    background-color: #2d312d;
+    /* backdrop-filter: blur(50px); */
     border-radius: 25px;
     width: 65vw;
     height: 205px;
@@ -213,7 +213,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: transparent;
+    background: linear-gradient(to bottom, #8c4040, #274529);
     border-radius: 25px;
     width: 330px;
     height: 410px;
