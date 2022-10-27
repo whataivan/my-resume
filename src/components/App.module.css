@@ -18,7 +18,8 @@
     width: 100vw;
     overflow: hidden;
 
-    background: url('../images/1.jpg');
+    
+    background: linear-gradient(to right, #5f5db4, rgb(188 96 139));
     background-size: cover;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
@@ -27,11 +28,11 @@
   .mainActive {
     width: 100vw;
     height: 720px;
-
+    background: linear-gradient(to right, #5f5db4, rgb(188 96 139));
     background-size: cover;
     overflow: hidden;
 
-    background: url('../images/1.jpg');
+    
   
     border-bottom: 3px solid white;
   }
@@ -41,14 +42,15 @@
     align-items: center;
     justify-content: center;
 
-    
-    background: url('../images/2bg.JPG');
+   
+    background: linear-gradient(to left, #8e5f5f, rgb(70, 132, 87));
     overflow: hidden;
     border-bottom: 3px solid white;
   }
 
   .aboutActive {
-    background: url('../images/2.jpg');
+    
+    background: linear-gradient(to top, #8e5f5f, rgb(70, 132, 87));
     width: 100vw;
     overflow: hidden;
      border-bottom: 3px solid white;
@@ -60,19 +62,19 @@
 
     align-items: center;
     justify-content: center;
-
+    background: linear-gradient(to left, #31a17c, rgb(37, 48, 166));
     background-size: cover;
-    background: url('../images/3.jpg');
+    
     overflow: hidden;
     border-bottom: 3px solid white;
   }
 
   .portfolioActive {
    
-    background: url('../images/3.jpg');
+    
     border-bottom: 3px solid white;
     width: 100vw;
-    
+    background: linear-gradient(to top, #31a17c, rgb(37, 48, 166));
     overflow: hidden;
 
     background-size: cover;
@@ -84,7 +86,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-   background: url('../images/4.jpg');
+    background: linear-gradient(to left, #113276, rgb(166, 95, 37));
     overflow: hidden;
     border-bottom: 3px solid white;
     background-size: cover;
@@ -93,7 +95,7 @@
     width: 100vw;
 
     overflow: hidden;
-   background: url('../images/4.jpg');
+    background: linear-gradient(to top, #113276, rgb(166, 95, 37));
     background-size: cover;
   }
   .NightTheme {
@@ -123,7 +125,8 @@
     width: 100vw;
     overflow: hidden;
 
-    background: url('../images/1.jpg');
+    
+    background: linear-gradient(to right, #5f5db4, rgb(188 96 139));
     background-size: cover;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
@@ -137,7 +140,7 @@
     overflow: hidden;
 
     background: url('../images/1.jpg');
-  
+    background: linear-gradient(to right, #5f5db4, rgb(188 96 139));
     border-bottom: 3px solid white;
   }
   .about {
@@ -145,15 +148,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background: linear-gradient(to top, #8e5f5f, rgb(70, 132, 87));
     
-    background: url('../images/2bg.JPG');
+    /* background: url('../images/2bg.JPG'); */
     overflow: hidden;
     border-bottom: 3px solid white;
   }
 
   .aboutActive {
     background: url('../images/2.jpg');
+    background: linear-gradient(to top, #8e5f5f, rgb(70, 132, 87));
     width: 100vw;
     overflow: hidden;
      border-bottom: 3px solid white;
@@ -167,14 +171,14 @@
     justify-content: center;
 
     background-size: cover;
-    background: url('../images/3.jpg');
+    background: linear-gradient(to top, #31a17c, rgb(37, 48, 166));
     overflow: hidden;
     border-bottom: 3px solid white;
   }
 
   .portfolioActive {
    
-    background: url('../images/3.jpg');
+    background: linear-gradient(to top, #31a17c, rgb(37, 48, 166));
     border-bottom: 3px solid white;
     width: 100vw;
     
@@ -189,7 +193,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-   background: url('../images/4.jpg');
+    background: linear-gradient(to left, #113276, rgb(166, 95, 37));
     overflow: hidden;
     border-bottom: 3px solid white;
     background-size: cover;
@@ -198,7 +202,7 @@
     width: 100vw;
 
     overflow: hidden;
-   background: url('../images/4.jpg');
+    background: linear-gradient(to top, #113276, rgb(166, 95, 37));
     background-size: cover;
   }
   .NightTheme {

@@ -43,7 +43,7 @@
   .title {
   margin: 0;
     width: 85vw;
-    color: rgb(55, 51, 44);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 700;
     margin-left: auto;
@@ -55,7 +55,7 @@
   .subtitle {
    
     margin-top: 20px;
-    color: rgb(8, 8, 8);
+    color: wheat;
    width: 65vw;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +64,7 @@
   }
   .text {
     font-size: 15px;
-    color: black;
+    color: wheat;
     margin-top: 15px;
     line-height: 25px;
     letter-spacing: 0.02em;

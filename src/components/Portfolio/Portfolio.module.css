@@ -472,20 +472,20 @@ text-align: center;
     margin-right: 25px;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 5px 5px,
       rgba(246, 244, 244, 0.22) 0px 3px 5px;
   }
   
   .bot_wrap {
     display: flex;
-    margin-top: 10px;
+    margin-top: 3px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   
     align-items: center;
   }
@@ -493,7 +493,7 @@ text-align: center;
   .btn_wrap {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .first_btn {
     display: flex;
@@ -501,12 +501,12 @@ text-align: center;
     justify-content: center;
     cursor: pointer;
   
-    margin-right: 25px;
+    margin-right: 10px;
     color: white;
     opacity: 0.8;
-    border-radius: 10px;
+    border-radius: 0 0 0 15px;
     border: 2px solid rgb(248, 246, 246);
-    width: 250px;
+    width: 285px;
     height: 40px;
     margin-bottom: 15px;
     
@@ -518,9 +518,9 @@ text-align: center;
     cursor: pointer;
     color: white;
     opacity: 0.8;
-    border-radius: 10px;
+    border-radius:0 0 15px 0;
     border: 2px solid rgb(248, 246, 246);
-    width: 250px;
+    width: 285px;
     height: 40px;
   
   }
