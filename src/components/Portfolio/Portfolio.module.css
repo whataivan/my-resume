@@ -50,7 +50,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    background: url('../../images/bg.JPG');
+    outline: 1px solid white;
+    background: transparent;
     background-size: auto;
     padding-right: 10px;
     border-radius: 15px;
@@ -64,7 +65,8 @@
     justify-content: center;
     border-radius: 15px;
     padding: 10px;
-    background: url('../../images/bg.JPG');
+    outline: 1px solid white;
+    background: rgb(39, 37, 37);
     padding-right: 10px;
     border-bottom: 2px solid white;
     background-size: auto;
@@ -232,7 +234,8 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    background: url('../../images/bg.JPG');
+    outline: 1px solid white;
+    background: transparent;
     background-size: cover;
     padding-right: 10px;
     border-radius: 15px;
@@ -246,7 +249,8 @@ text-align: center;
     justify-content: center;
     border-radius: 15px;
     padding: 20px;
-    background: url('../../images/bg.JPG');
+    outline: 1px solid white;
+    background: rgb(39, 37, 37);
     padding-right: 10px;
     border-bottom: 2px solid white;
     background-size: cover;
@@ -387,7 +391,7 @@ text-align: center;
   }
   
   .group {
-    background: url('../../images/bg.JPG');
+    background: transparent;
     display: flex;
   
     align-items: center;
@@ -396,15 +400,15 @@ text-align: center;
     width: 210px;
     height: 250px;
     
-   
+   outline: 1px solid white;
     border-radius: 20px;
-  
+  transition: all 0.3s ease;
     background-size: cover;
   }
   .group_active {
-    background: url('../../images/bg.JPG');
+    background: #33333a;
     display: flex;
-  
+    outline: 1px solid white;
     align-items: center;
     flex-direction: column;
   
@@ -423,6 +427,7 @@ text-align: center;
     width: 210px;
     height: 120px;
     margin-bottom: 5px;
+    overflow: hidden;
   }
   .subtitle {
     margin-bottom: 9px;
