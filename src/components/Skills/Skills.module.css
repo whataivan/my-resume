@@ -33,12 +33,11 @@
     border-radius: 15px;
 margin-bottom: 10px;
     backdrop-filter: blur(60px);
-    border-bottom: 1px solid wheat;
-    border-top: 1px solid wheat;
+   
   }
   .item {
     border-bottom: 1px solid rgb(245, 239, 230);
-    /* border-top: 1px solid rgb(246, 241, 232); */
+    
     cursor: pointer;
     background-color: rgb(18, 30, 63);
 
@@ -97,11 +96,10 @@ margin-bottom: 10px;
     border-radius: 15px;
 
     backdrop-filter: blur(60px);
-    border-bottom: 1px solid wheat;
-    border-top: 1px solid wheat;
+    
   }
   .item {
-    border-bottom: 1px solid rgb(245, 239, 230);
+    /* border-bottom: 1px solid rgb(245, 239, 230); */
     border-top: 1px solid rgb(246, 241, 232);
     cursor: pointer;
     background-color: rgb(18, 30, 63);
@@ -163,14 +161,13 @@ margin-bottom: 10px;
     align-items: center;
   
     backdrop-filter: blur(60px);
-    border-bottom: 0.5px solid wheat;
-    border-top: 0.5px solid wheat;
+    
   }
   .item {
-    border-bottom: 0.5px solid rgb(245, 239, 230);
-    border-top: 0.5px solid rgb(246, 241, 232);
+    border-bottom: 1px solid rgb(245, 239, 230);
+    /* border-top: 0.5px solid rgb(246, 241, 232); */
     cursor: pointer;
-    background-color: rgb(18, 30, 63);
+    /* background-color: rgb(18, 30, 63); */
   
     margin-top: 7px;
     display: flex;

@@ -424,14 +424,15 @@ text-align: center;
     border-bottom: 0.5px solid white;
   }
   .img {
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     border-radius: 20px 20px 0 0;
     width: 210px;
     height: 120px;
-    margin-bottom: 5px;
+   
     overflow: hidden;
   }
   .subtitle {
+    
     margin-bottom: 9px;
     color: aliceblue;
   font-size: 13px;
@@ -455,20 +456,23 @@ text-align: center;
   }
   .text {
     margin: 5px 20px 0 0px;
+    
     color: white;
     font-size: 12px;
     padding-left: 30px;
   }
   .orange_text {
-    /* margin-top: 15px; */
+   
     margin: 5px 0px 0 8px;
   
     color: orange;
     font-size: 13px;
   }
   .used_text {
+     
     font-size: 12px;
     margin: 5px 8px 0 8px;
+    margin-top: 10px;
     color: blanchedalmond;
     line-height: normal;
   }
