@@ -37,8 +37,8 @@ export const Skills = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.3 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ scale: 0.3 }}
+      animate={{  scale: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, delay: 0.3 }}
       className={style.container}
