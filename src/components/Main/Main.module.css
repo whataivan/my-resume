@@ -181,7 +181,7 @@
   .title {
     margin-top: 25px;
     margin-left: -110px;
-    color: rgb(96, 88, 74);
+    color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -189,13 +189,13 @@
   
   .subtitle {
     margin-top: 35px;
-    color: rgb(96, 88, 74);
+    color: rgb(255, 255, 255);
     width: 30vw;
     
     
   }
   .text {
-    color: rgb(96, 88, 74);
+    color: rgb(255, 255, 255);
     margin-top: 3vh;
     margin-left: 35px;
    width: 55vw;

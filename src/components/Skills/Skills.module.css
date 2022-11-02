@@ -39,7 +39,7 @@ margin-bottom: 10px;
     border-bottom: 1px solid rgb(245, 239, 230);
     
     cursor: pointer;
-    background-color: rgb(18, 30, 63);
+   
 
     margin-top: 3px;
     display: flex;
@@ -71,10 +71,10 @@ margin-bottom: 10px;
   }
 
   .title {
-    padding: 15px;
+    padding: 5px;
     color: rgb(18, 30, 63);
     height: 15px;
-    width: 100px;
+    width: 105px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -99,10 +99,10 @@ margin-bottom: 10px;
     
   }
   .item {
-    /* border-bottom: 1px solid rgb(245, 239, 230); */
+    
     border-top: 1px solid rgb(246, 241, 232);
     cursor: pointer;
-    background-color: rgb(18, 30, 63);
+    
 
     margin-top: 9px;
     display: flex;
